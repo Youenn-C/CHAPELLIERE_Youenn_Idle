@@ -547,8 +547,8 @@ MonoBehaviour:
   _bookmarkPanel2: {fileID: 1340655211}
   _bookmarkPanel3: {fileID: 656830753}
   _bookmarkPanel4: {fileID: 814857205}
-  _soundEffect1: {fileID: 8300000, guid: 02ebb919d8246ea4086a5bfa3464cb87, type: 3}
-  _soundEffect2: {fileID: 8300000, guid: 575adf2f6527df64ebb94a4827a7cb6e, type: 3}
+  _soundEffect1: {fileID: 8300000, guid: 610203cee2c950e41b0d1e66c18f9193, type: 3}
+  _soundEffect2: {fileID: 8300000, guid: cb7bdaab85d46a1449424fece6a4bcd7, type: 3}
 --- !u!1 &382259256
 GameObject:
   m_ObjectHideFlags: 0
@@ -1137,7 +1137,7 @@ GameObject:
   - component: {fileID: 546807278}
   - component: {fileID: 546807279}
   m_Layer: 0
-  m_Name: Chat_Effect - Audio Source
+  m_Name: AM_Tavern_02 - Audio Source
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1168,7 +1168,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 3349fbdcf4d88084bb2bffb094ed10b4, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -3969,7 +3969,7 @@ GameObject:
   - component: {fileID: 1348575585}
   - component: {fileID: 1348575586}
   m_Layer: 0
-  m_Name: Atmospheric_Music - Audio Source
+  m_Name: AM_Tavern_01 - Audio Source
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4000,7 +4000,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 25f3327f22a82f14fbfbab4f48d65ee3, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
