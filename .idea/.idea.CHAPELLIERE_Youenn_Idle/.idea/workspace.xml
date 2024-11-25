@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15f19071-a9e0-4109-87ac-8f9314201cc8" name="Changes" comment="" />
+    <list default="true" id="15f19071-a9e0-4109-87ac-8f9314201cc8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CHAPELLIERE_Youenn_Idle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CHAPELLIERE_Youenn_Idle/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Alcohol.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Alcohol.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Alcohol.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Alcohol.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Ingredients.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Ingredients.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Ingredients.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Ingredients.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/MesEnums.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/MesEnums.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,27 +24,27 @@
     <setting file="file://$PROJECT_DIR$/../Astuces_Cliker/MesEnums.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Alcohol.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2pM8zCdbYxUyVB1C0rQ2wm38oXE" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="D:\Unity_Editor_Versions\2022.3.48f1\Editor\Unity.exe" />
@@ -85,6 +92,7 @@
       <option name="presentableId" value="Default" />
       <updated>1732564845196</updated>
       <workItem from="1732564847431" duration="672000" />
+      <workItem from="1732568750255" duration="644000" />
     </task>
     <servers />
   </component>

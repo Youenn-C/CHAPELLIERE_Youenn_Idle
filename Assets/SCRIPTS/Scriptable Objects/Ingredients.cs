@@ -7,6 +7,5 @@ public class Ingredients : ScriptableObject
 {
     public string ingedientName;
     public int ingedientpurchasePrice;
-    public int ingedientsellingPrice;
     public Sprite ingedientImage;
 }

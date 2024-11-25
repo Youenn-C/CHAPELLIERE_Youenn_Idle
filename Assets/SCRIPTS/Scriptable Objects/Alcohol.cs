@@ -6,7 +6,7 @@ using UnityEngine;
 public class Alcohol : ScriptableObject
 {
     public string alcoholName;
-    public int alcoholpurchasePrice;
-    public int alcoholsellingPrice;
+    public int alcoholPurchasePrice;
+    public AlcoholIngredients[] alcoholIngredients;
     public Sprite alcoholImage;
 }
