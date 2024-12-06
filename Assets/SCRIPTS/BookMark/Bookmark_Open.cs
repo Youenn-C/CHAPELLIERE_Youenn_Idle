@@ -13,7 +13,7 @@ public class Bookmark_Open : MonoBehaviour
     [Header("Sound Effect"), Space(5)]
     [SerializeField] private AudioClip _soundEffect1;
     [SerializeField] private AudioClip _soundEffect2;
-    private AudioSource _audioSource;
+    [SerializeField] private AudioSource _audioSource;
     
     public void OpenBookmark1()
     {
@@ -26,11 +26,11 @@ public class Bookmark_Open : MonoBehaviour
         
         if (randomSoundEffect == 1)
         {
-            _bookmarkPanel1.GetComponent<AudioSource>().PlayOneShot(_soundEffect1);
+            _audioSource.PlayOneShot(_soundEffect1);
         }
         else
         {
-            _bookmarkPanel1.GetComponent<AudioSource>().PlayOneShot(_soundEffect2);
+            _audioSource.PlayOneShot(_soundEffect2);
         }
     }
     
@@ -45,11 +45,11 @@ public class Bookmark_Open : MonoBehaviour
 
         if (randomSoundEffect == 1)
         {
-            _bookmarkPanel2.GetComponent<AudioSource>().PlayOneShot(_soundEffect1);
+            _audioSource.PlayOneShot(_soundEffect1);
         }
         else
         {
-            _bookmarkPanel2.GetComponent<AudioSource>().PlayOneShot(_soundEffect2);
+            _audioSource.PlayOneShot(_soundEffect2);
         }
     }
     
@@ -64,11 +64,11 @@ public class Bookmark_Open : MonoBehaviour
 
         if (randomSoundEffect == 1)
         {
-            _bookmarkPanel3.GetComponent<AudioSource>().PlayOneShot(_soundEffect1);
+            _audioSource.PlayOneShot(_soundEffect1);
         }
         else
         {
-            _bookmarkPanel3.GetComponent<AudioSource>().PlayOneShot(_soundEffect2);
+            _audioSource.PlayOneShot(_soundEffect2);
         }
     }
     
@@ -83,11 +83,11 @@ public class Bookmark_Open : MonoBehaviour
 
         if (randomSoundEffect == 1)
         {
-            _bookmarkPanel4.GetComponent<AudioSource>().PlayOneShot(_soundEffect1);
+            _audioSource.PlayOneShot(_soundEffect1);
         }
         else
         {
-            _bookmarkPanel4.GetComponent<AudioSource>().PlayOneShot(_soundEffect2);
+            _audioSource.PlayOneShot(_soundEffect2);
         }
     }
 }
