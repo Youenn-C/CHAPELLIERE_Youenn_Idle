@@ -10,7 +10,7 @@ public class ScoreManager : MonoBehaviour
 
     [Header("Score"), Space(5)]
     [SerializeField] private int score = 0;
-    [SerializeField] private TMP_Text scoreText; // Utilisez TMP_Text au lieu de Text
+    [SerializeField] private TMP_Text scoreText;
     
     private void Awake()
     {
