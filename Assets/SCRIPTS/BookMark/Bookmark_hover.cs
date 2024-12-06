@@ -9,7 +9,6 @@ public class Bookmark_hover : MonoBehaviour, IPointerEnterHandler, IPointerExitH
     private RectTransform _rectTransform;
     private Vector2 _originalPosition;
     private Vector2 _targetPosition; // Position vers laquelle le bouton glisse
-    private bool _isHovering = false;
 
     void Start()
     {
@@ -28,13 +27,11 @@ public class Bookmark_hover : MonoBehaviour, IPointerEnterHandler, IPointerExitH
     {
         // Définir la nouvelle position cible lors du survol
         _targetPosition = _originalPosition + moveDirection;
-        _isHovering = true;
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
         // Revenir à la position d'origine lorsque la souris quitte la zone
         _targetPosition = _originalPosition;
-        _isHovering = false;
     }
 }

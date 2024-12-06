@@ -9,10 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec798dce126d2d545bdfad057f77faf3, type: 3}
-  m_Name: AL_My_Alcohol
+  m_Script: {fileID: 11500000, guid: 6a72f5cb0b8e60a4ca28353a803bd1ac, type: 3}
+  m_Name: IN_Apple
   m_EditorClassIdentifier: 
-  alcoholName: 
-  alcoholPurchasePrice: 0
-  alcoholIngredients: 
-  alcoholImage: {fileID: 0}
+  ingredientName: 
+  ingedientpurchasePrice: 0
+  ingedientImage: {fileID: 0}

@@ -9,7 +9,6 @@ public class DrakeManager : MonoBehaviour
     public static DrakeManager Instance { get; private set; }
 
     [Header("Drake"), Space(5)]
-    [SerializeField] private int richness = 0;
     [SerializeField] private TMP_Text richnessText;
 
     [Header("Sound Effect"), Space(5)]
@@ -36,7 +35,7 @@ public class DrakeManager : MonoBehaviour
 
     public void AddDrake(int amount)
     {
-        richness += amount;
+        Inventory.Instance.richness += amount;
         UpdateDrakeUI();
 
         _audioSource.PlayOneShot(_soundEffect);
@@ -46,21 +45,12 @@ public class DrakeManager : MonoBehaviour
     {
         if (richnessText != null)
         {
-            richnessText.text = "Drakes : " + richness.ToString();
+            richnessText.text = "Drakes : " + Inventory.Instance.richness.ToString();
         }
     }
 
     public int GetScore()
     {
-        return richness;
-    }
-
-
-
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        return Inventory.Instance.richness;
     }
 }

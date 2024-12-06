@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "new_Ingredient", menuName = "Ingredient", order = 0)]
+[CreateAssetMenu(fileName = "IN_", menuName = "Ingredient", order = 0)]
 public class Ingredients : ScriptableObject
 {
-    public string ingedientName;
+    public string ingredientName;
     public int ingedientpurchasePrice;
     public Sprite ingedientImage;
 }

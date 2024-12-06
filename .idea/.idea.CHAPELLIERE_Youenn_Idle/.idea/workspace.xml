@@ -5,12 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15f19071-a9e0-4109-87ac-8f9314201cc8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CHAPELLIERE_Youenn_Idle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CHAPELLIERE_Youenn_Idle/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Distillery.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Distillery/Distillery.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Distillery/Distillery.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/AlcoholRecipe.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/AlcoholRecipe.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/BookMark/Bookmark_hover.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/BookMark/Bookmark_hover.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/DrakeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/DrakeManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Alcohol.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Alcohol.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Alcohol.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Alcohol.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Ingredients.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Ingredients.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Ingredients.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Ingredients.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/MesEnums.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/MesEnums.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/AL_My_Alcohol.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/AL_My_Alcohol.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/IN_My_Ingredient.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/IN_My_Ingredient.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,14 +29,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/../Astuces_Cliker/MesEnums.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Astuces_Cliker/Scripts/Intro_UI/AttackButton.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Alcohol.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2pM8zCdbYxUyVB1C0rQ2wm38oXE" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -47,7 +59,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:\Unity_Editor_Versions\2022.3.48f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.48f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath &quot;E:\2 - Cours\2 - année_n°2\4 - Programmation\3 - Clicker\CHAPELLIERE_Youenn_Idle&quot; -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="E:\2 - Cours\2 - année_n°2\4 - Programmation\3 - Clicker\CHAPELLIERE_Youenn_Idle" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -55,7 +67,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:\Unity_Editor_Versions\2022.3.48f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.48f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;E:\2 - Cours\2 - année_n°2\4 - Programmation\3 - Clicker\CHAPELLIERE_Youenn_Idle&quot; -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="E:\2 - Cours\2 - année_n°2\4 - Programmation\3 - Clicker\CHAPELLIERE_Youenn_Idle" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -93,12 +105,14 @@
       <updated>1732564845196</updated>
       <workItem from="1732564847431" duration="672000" />
       <workItem from="1732568750255" duration="644000" />
+      <workItem from="1733487161990" duration="13222000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityProjectDiscoverer">
     <option name="hasUnityReference" value="true" />
