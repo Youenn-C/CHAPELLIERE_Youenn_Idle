@@ -15,17 +15,22 @@ public class Distillery : MonoBehaviour
     
     [Header("Buttons"), Space(5)]
     [SerializeField] private Button brandyBTN;
+    
+    [Header("Sound"), Space(5)]
+    [SerializeField] private AudioSource _audioSource;
+    [SerializeField] private AudioClip _soundEffect;
 
     [Header("Brandy"), Space(5)]
-    private int appleRequiwerd = 3;
-    private int cherryRequiwerd = 3;
-    private int pearRequiwerd = 3;
-    /*
-    [Header("Brandy"), Space(5)]
+    private int brandyAppleRequiwerd = 3;
+    private int brandyCherryRequiwerd = 3;
+    private int brandyPearRequiwerd = 3;
+    
+    [Header("Wiskey"), Space(5)]
     private int appleRequiwerd = 3;
     private int cherryRequiwerd = 3;
     private int pearRequiwerd = 3;
     
+    /*
     [Header("Brandy"), Space(5)]
     private int appleRequiwerd = 3;
     private int cherryRequiwerd = 3;
@@ -51,7 +56,7 @@ public class Distillery : MonoBehaviour
     void CheckPreparationOfBrandy()
     {
         // Déclarez un tableau des quantités requises pour chaque ressource (par exemple, pommes, cerises, poires)
-        int[] requiredAmounts = { appleRequiwerd, cherryRequiwerd, pearRequiwerd };
+        int[] requiredAmounts = { brandyAppleRequiwerd, brandyCherryRequiwerd, brandyPearRequiwerd};
 
         // Déclarez un tableau des quantités disponibles dans l'inventaire pour chaque ressource correspondante
         int[] availableAmounts = { Inventory.Instance.appleAmount, Inventory.Instance.cherryAmount, Inventory.Instance.pearAmount };
@@ -79,19 +84,9 @@ public class Distillery : MonoBehaviour
 
     public void PrepareBrandy()
     {
-        // Déclarez un tableau des quantités requises pour chaque ressource (par exemple, pommes, cerises, poires)
-        int[] requiredAmounts = { appleRequiwerd, cherryRequiwerd, pearRequiwerd };
-
-        // Déclarez un tableau des quantités disponibles dans l'inventaire pour chaque ressource correspondante
+        int[] requiredAmounts = { brandyAppleRequiwerd, brandyCherryRequiwerd, brandyPearRequiwerd};
         int[] availableAmounts = { Inventory.Instance.appleAmount, Inventory.Instance.cherryAmount, Inventory.Instance.pearAmount };
-
-        // Utilisez la méthode Zip pour combiner les deux tableaux en paires (requises et disponibles), 
-        // puis vérifiez pour chaque paire que la quantité disponible est supérieure ou égale à la quantité requise.
-        bool allResourcesSufficient = requiredAmounts
-            .Zip(availableAmounts, (required, available) => available >= required)  // Vérifie si chaque ressource est suffisante
-            .All(x => x);  // Si toutes les ressources sont suffisantes (tous les résultats de "Zip" sont true), alors "allResourcesSufficient" sera true
-
-        // Résultat : "allResourcesSufficient" sera true si toutes les ressources sont suffisantes, sinon false.    
+        bool allResourcesSufficient = requiredAmounts.Zip(availableAmounts, (required, available) => available >= required).All(x => x);
 
         if (allResourcesSufficient)
         {
@@ -100,6 +95,8 @@ public class Distillery : MonoBehaviour
             Inventory.Instance.pearAmount -= pearRequiwerd;
             
             Inventory.Instance.brandyAmount ++;
+            
+            _audioSource.PlayOneShot(_soundEffect);
         }
     }
 

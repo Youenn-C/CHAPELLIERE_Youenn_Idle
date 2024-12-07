@@ -785,6 +785,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Distillery, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &306020284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1425,6 +1437,8 @@ MonoBehaviour:
   cherryText: {fileID: 1276104219}
   pearText: {fileID: 403959929}
   brandyBTN: {fileID: 306020283}
+  _audioSource: {fileID: 2134315880}
+  _soundEffect: {fileID: 8300000, guid: b5a90f5c285be764ab7b215a33049f76, type: 3}
 --- !u!4 &454118677
 Transform:
   m_ObjectHideFlags: 0
@@ -5522,7 +5536,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   richnessText: {fileID: 1330429223}
-  _soundEffect: {fileID: 8300000, guid: 171cb0d4e0395e14ea12bb2f3b3f0ad1, type: 3}
+  _soundEffect: {fileID: 8300000, guid: 4a23fd329f0206c4494c00d0512a3050, type: 3}
   _audioSource: {fileID: 2134315880}
 --- !u!114 &1384314325
 MonoBehaviour:
