@@ -11,9 +11,7 @@ public class DrakeManager : MonoBehaviour
     [Header("Drake"), Space(5)]
     [SerializeField] private TMP_Text richnessText;
 
-    [Header("Sound Effect"), Space(5)]
-    [SerializeField] private AudioClip _soundEffect;
-    [SerializeField] private AudioSource _audioSource;
+    
 
     private void Awake()
     {
@@ -37,8 +35,6 @@ public class DrakeManager : MonoBehaviour
     {
         Inventory.Instance.richness += amount;
         UpdateDrakeUI();
-
-        _audioSource.PlayOneShot(_soundEffect);
     }
 
     private void UpdateDrakeUI()

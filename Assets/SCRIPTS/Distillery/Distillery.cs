@@ -24,32 +24,33 @@ public class Distillery : MonoBehaviour
     // -------------------------------------------------------------
     
     [Header("Brandy"), Space(5)]
-    [SerializeField] private int appleRequiwerd;
-    [SerializeField] private int cherryRequiwerd;
-    [SerializeField] private int pearRequiwerd;
+    [SerializeField] private int appleRequired;
+    [SerializeField] private int cherryRequired;
+    [SerializeField] private int pearRequired;
+    [SerializeField] private TMP_Text bottleOfBrandyAmount;
     private int[] brandyIngredientsRequired;
     
     [Header("Wiskey"), Space(5)]
-    [SerializeField] private int cerealsRequiwerd;
-    [SerializeField] private int waterRequiwerd;
-    [SerializeField] private int yeastRequiwerd;
+    [SerializeField] private int cerealsRequired;
+    [SerializeField] private int waterRequired;
+    [SerializeField] private int yeastRequired;
     private int[] wiskeyIngredientsRequired;
         
     [Header("Cognac"), Space(5)]
-    [SerializeField] private int whiteGrapesRequiwerd;
+    [SerializeField] private int whiteGrapesRequired;
     private int[] cognacIngredientsRequired;
     
     [Header("Grand Marnier"), Space(5)]
-    [SerializeField] private int exoticOrangeEssenceRequiwerd;
+    [SerializeField] private int exoticOrangeEssenceRequired;
     private int[] GrandMarnierIngredientsRequired;
     
     [Header("Absinthe"), Space(5)]
-    [SerializeField] private int largeWormwoodRequiwerd;
-    [SerializeField] private int smallWormwoodRequiwerd;
-    [SerializeField] private int greenAniseRequiwerd;
-    [SerializeField] private int fennelRequiwerd;
-    [SerializeField] private int lemonBalmRequiwerd;
-    [SerializeField] private int hyssopRequiwerd;
+    [SerializeField] private int largeWormwoodRequired;
+    [SerializeField] private int smallWormwoodRequired;
+    [SerializeField] private int greenAniseRequired;
+    [SerializeField] private int fennelRequired;
+    [SerializeField] private int lemonBalmRequired;
+    [SerializeField] private int hyssopRequired;
     private int[] absintheIngredientsRequired;
     
     void Start()
@@ -65,17 +66,17 @@ public class Distillery : MonoBehaviour
 
     void InitializationOfIngredients()
     {
-        brandyIngredientsRequired = new int[] {appleRequiwerd, cherryRequiwerd, pearRequiwerd};
-        wiskeyIngredientsRequired = new int[] {cerealsRequiwerd, waterRequiwerd, yeastRequiwerd};
-        cognacIngredientsRequired = new int[] {whiteGrapesRequiwerd};
-        GrandMarnierIngredientsRequired = new int[] {exoticOrangeEssenceRequiwerd};
-        absintheIngredientsRequired = new int[] {largeWormwoodRequiwerd, smallWormwoodRequiwerd, greenAniseRequiwerd, fennelRequiwerd, lemonBalmRequiwerd, hyssopRequiwerd};
+        brandyIngredientsRequired = new int[] {appleRequired, cherryRequired, pearRequired};
+        wiskeyIngredientsRequired = new int[] {cerealsRequired, waterRequired, yeastRequired};
+        cognacIngredientsRequired = new int[] {whiteGrapesRequired};
+        GrandMarnierIngredientsRequired = new int[] {exoticOrangeEssenceRequired};
+        absintheIngredientsRequired = new int[] {largeWormwoodRequired, smallWormwoodRequired, greenAniseRequired, fennelRequired, lemonBalmRequired, hyssopRequired};
     }
     
     void CheckPreparation()
     {
         // Déclarez un tableau des quantités requises pour chaque ressource (par exemple, pommes, cerises, poires)
-        //int[] requiredAmounts = { brandyAppleRequiwerd, brandyCherryRequiwerd, brandyPearRequiwerd};
+        //int[] requiredAmounts = { brandyAppleRequired, brandyCherryRequired, brandyPearRequired};
 
         // Déclarez un tableau des quantités disponibles dans l'inventaire pour chaque ressource correspondante
         int[] availableAmounts = { Inventory.Instance.appleAmount, Inventory.Instance.cherryAmount, Inventory.Instance.pearAmount };
@@ -100,25 +101,25 @@ public class Distillery : MonoBehaviour
 
         UpdateBrandyUI();
     }
-/*
+
     public void PrepareBrandy()
     {
-        int[] requiredAmounts = { brandyAppleRequiwerd, brandyCherryRequiwerd, brandyPearRequiwerd};
+        int[] requiredAmounts = {appleRequired, cherryRequired, pearRequired};
         int[] availableAmounts = { Inventory.Instance.appleAmount, Inventory.Instance.cherryAmount, Inventory.Instance.pearAmount };
         bool allResourcesSufficient = requiredAmounts.Zip(availableAmounts, (required, available) => available >= required).All(x => x);
 
         if (allResourcesSufficient)
         {
-            Inventory.Instance.appleAmount -= appleRequiwerd;
-            Inventory.Instance.cherryAmount -= cherryRequiwerd;
-            Inventory.Instance.pearAmount -= pearRequiwerd;
+            Inventory.Instance.appleAmount -= appleRequired;
+            Inventory.Instance.cherryAmount -= cherryRequired;
+            Inventory.Instance.pearAmount -= pearRequired;
             
             Inventory.Instance.brandyAmount ++;
             
             _audioSource.PlayOneShot(_soundEffect);
         }
     }
-*/
+
     private void UpdateBrandyUI()
     {
         if (appleText != null)
@@ -135,6 +136,8 @@ public class Distillery : MonoBehaviour
         {
             pearText.text = Inventory.Instance.pearAmount.ToString() + " / " + 3.ToString();
         }
+        
+        
     }
     
     
