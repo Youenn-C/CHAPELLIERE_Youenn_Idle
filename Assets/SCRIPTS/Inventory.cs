@@ -13,6 +13,17 @@ public class Inventory : MonoBehaviour
     public int appleAmount;
     public int cherryAmount;
     public int pearAmount;
+    public int cerealsAmount;
+    public int waterAmount;
+    public int yeastAmount;
+    public int whiteGrapesAmount;
+    public int exoticOrangeEssenceAmount;
+    public int largeWormwoodAmount;
+    public int smallWormwoodAmount;
+    public int greenAniseAmount;
+    public int fennelAmount;
+    public int lemonBalmAmount;
+    public int hyssopAmount;
 
     [Header("Alcohol"), Space(5)]
     public int brandyAmount;
