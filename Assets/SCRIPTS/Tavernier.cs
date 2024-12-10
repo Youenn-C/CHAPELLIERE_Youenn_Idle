@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.UI;
 using TMPro;
 
 public class Tavernier : MonoBehaviour
 {
     [SerializeField] private GameObject _empoyTextButton;
     [SerializeField] private GameObject _levelUpButton;
+    [SerializeField] private Button _tavernierButton;
     [SerializeField] private int tavernierLevel;
     [SerializeField] private int multiplyingFactor = 1;
     // Start is called before the first frame update
@@ -29,12 +31,14 @@ public class Tavernier : MonoBehaviour
             StartCoroutine(WorkTavernier());
         }
         multiplyingFactor *= 2;
+
+        StartCoroutine(LevelUpCooldown());
     }
     
     private void ServeTheGuestByTavernier()
     {
-        float valeur = (2 + tavernierLevel) * multiplyingFactor;
-        int drakesAmount = (int)Math.Round(valeur, MidpointRounding.AwayFromZero);
+        int valeur = (2 + tavernierLevel) * multiplyingFactor;
+        int drakesAmount = valeur;
         
         Debug.Log(drakesAmount);
         
@@ -50,5 +54,12 @@ public class Tavernier : MonoBehaviour
             ServeTheGuestByTavernier();
         }
         
+    }
+    
+    public IEnumerator LevelUpCooldown()
+    {
+        _tavernierButton.interactable = false;
+        yield return new WaitForSeconds(0.25f);
+        _tavernierButton.interactable = true;
     }
 }
