@@ -13,6 +13,13 @@ public class Bookmark_Open : MonoBehaviour
     [SerializeField] private AudioClip _soundEffect1;
     [SerializeField] private AudioClip _soundEffect2;
     [SerializeField] private AudioSource _audioSource;
+
+    void Start()
+    {
+        _bookmarkPanel1.SetActive(true);
+        _bookmarkPanel2.SetActive(false);
+        _bookmarkPanel3.SetActive(false);
+    }
     
     public void OpenBookmark1()
     {

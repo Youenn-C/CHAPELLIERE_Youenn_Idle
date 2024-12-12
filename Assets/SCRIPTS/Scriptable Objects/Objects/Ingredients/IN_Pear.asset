@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a72f5cb0b8e60a4ca28353a803bd1ac, type: 3}
   m_Name: IN_Pear
   m_EditorClassIdentifier: 
-  ingredientName: 
+  ingredientName: Pear
   ingedientpurchasePrice: 0
   ingedientImage: {fileID: 0}

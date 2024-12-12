@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15f19071-a9e0-4109-87ac-8f9314201cc8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Save/ComplexSaver.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Save/ComplexSaver.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CHAPELLIERE_Youenn_Idle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CHAPELLIERE_Youenn_Idle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Tavernier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Tavernier.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/BookMark/Bookmark_Open.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/BookMark/Bookmark_Open.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Inventory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Apple.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Apple.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Cherry.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Cherry.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Pear.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Pear.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -104,6 +111,7 @@
       <workItem from="1733755115883" duration="564000" />
       <workItem from="1733755720247" duration="5602000" />
       <workItem from="1733837841107" duration="1044000" />
+      <workItem from="1733999418425" duration="16679000" />
     </task>
     <servers />
   </component>

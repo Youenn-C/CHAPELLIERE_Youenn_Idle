@@ -1,7 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,6 +9,8 @@ public class GameManager : MonoBehaviour
     [Header("Sound Effect"), Space(5)]
     [SerializeField] private AudioClip _soundEffect;
     [SerializeField] private AudioSource _audioSource;
+    
+    
 
     public void ServeTheGuest()
     {

@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6a72f5cb0b8e60a4ca28353a803bd1ac, type: 3}
-  m_Name: IN_Apple
+  m_Name: IN_White_Grapes
   m_EditorClassIdentifier: 
-  ingredientName: Apple
-  ingedientpurchasePrice: 3
+  ingredientName: White Grapes
+  ingedientpurchasePrice: 0
   ingedientImage: {fileID: 0}
