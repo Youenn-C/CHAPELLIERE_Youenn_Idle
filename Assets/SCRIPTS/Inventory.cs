@@ -25,6 +25,11 @@ public class Inventory : MonoBehaviour
 
     [Header("Alcohol"), Space(5)]
     public int brandyAmount;
+    public int wiskeyAmount;
+    public int cognacAmount;
+    public int GrandMarnierAmount;
+    public int absintheAmount;
+    
     private void Awake()
     {
         // Singleton pour assurer qu'il n'y a qu'une seule instance de ScoreManager

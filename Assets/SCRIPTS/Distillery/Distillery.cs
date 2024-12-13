@@ -27,6 +27,7 @@ public class Distillery : MonoBehaviour
     [SerializeField] private int appleRequired;
     [SerializeField] private int cherryRequired;
     [SerializeField] private int pearRequired;
+    [Space(5)]
     [SerializeField] private TMP_Text bottleOfBrandyAmount;
     private int[] brandyIngredientsRequired;
     
@@ -34,14 +35,20 @@ public class Distillery : MonoBehaviour
     [SerializeField] private int cerealsRequired;
     [SerializeField] private int waterRequired;
     [SerializeField] private int yeastRequired;
+    [Space(5)]
+    [SerializeField] private TMP_Text bottleOfWiskeyAmount;
     private int[] wiskeyIngredientsRequired;
         
     [Header("Cognac"), Space(5)]
     [SerializeField] private int whiteGrapesRequired;
+    [Space(5)]
+    [SerializeField] private TMP_Text bottleOfCognacAmount;
     private int[] cognacIngredientsRequired;
     
     [Header("Grand Marnier"), Space(5)]
     [SerializeField] private int exoticOrangeEssenceRequired;
+    [Space(5)]
+    [SerializeField] private TMP_Text bottleOfGrandMarnierAmount;
     private int[] GrandMarnierIngredientsRequired;
     
     [Header("Absinthe"), Space(5)]
@@ -51,38 +58,32 @@ public class Distillery : MonoBehaviour
     [SerializeField] private int fennelRequired;
     [SerializeField] private int lemonBalmRequired;
     [SerializeField] private int hyssopRequired;
+    [Space(5)]
+    [SerializeField] private TMP_Text bottleOfAbsintheAmount;
     private int[] absintheIngredientsRequired;
     
     void Start()
-    {
-        UpdateBrandyUI();
-        InitializationOfIngredients();
-    }
-
-    void Update()
-    {
-        CheckPreparation();
-    }
-
-    void InitializationOfIngredients()
     {
         brandyIngredientsRequired = new int[] {appleRequired, cherryRequired, pearRequired};
         wiskeyIngredientsRequired = new int[] {cerealsRequired, waterRequired, yeastRequired};
         cognacIngredientsRequired = new int[] {whiteGrapesRequired};
         GrandMarnierIngredientsRequired = new int[] {exoticOrangeEssenceRequired};
         absintheIngredientsRequired = new int[] {largeWormwoodRequired, smallWormwoodRequired, greenAniseRequired, fennelRequired, lemonBalmRequired, hyssopRequired};
+        
+        UpdateBrandyUI();
+    }
+
+    void Update()
+    {
+        CheckPreparationForBrandy();
     }
     
-    void CheckPreparation()
+    void CheckPreparationForBrandy()
     {
-        // Déclarez un tableau des quantités requises pour chaque ressource (par exemple, pommes, cerises, poires)
-        //int[] requiredAmounts = { brandyAppleRequired, brandyCherryRequired, brandyPearRequired};
-
         // Déclarez un tableau des quantités disponibles dans l'inventaire pour chaque ressource correspondante
         int[] availableAmounts = { Inventory.Instance.appleAmount, Inventory.Instance.cherryAmount, Inventory.Instance.pearAmount };
 
-        // Utilisez la méthode Zip pour combiner les deux tableaux en paires (requises et disponibles), 
-        // puis vérifiez pour chaque paire que la quantité disponible est supérieure ou égale à la quantité requise.
+        // Utilisez la méthode Zip pour combiner les deux tableaux en paires (requises et disponibles), puis vérifiez pour chaque paire que la quantité disponible est supérieure ou égale à la quantité requise.
         bool allResourcesSufficient = brandyIngredientsRequired
             .Zip(availableAmounts, (required, available) => available >= required)  // Vérifie si chaque ressource est suffisante
             .All(x => x);  // Si toutes les ressources sont suffisantes (tous les résultats de "Zip" sont true), alors "allResourcesSufficient" sera true
@@ -124,59 +125,17 @@ public class Distillery : MonoBehaviour
     {
         if (appleText != null)
         {
-            appleText.text = Inventory.Instance.appleAmount.ToString() + " / " + 3.ToString();
+            appleText.text = Inventory.Instance.appleAmount.ToString() + " / " + appleRequired.ToString();
         }
         
         if (cherryText != null)
         {
-            cherryText.text = Inventory.Instance.cherryAmount.ToString() + " / " + 3.ToString();
+            cherryText.text = Inventory.Instance.cherryAmount.ToString() + " / " + cherryRequired.ToString();
         }
         
         if (pearText != null)
         {
-            pearText.text = Inventory.Instance.pearAmount.ToString() + " / " + 3.ToString();
-        }
-        
-        
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    void GetIngredientNames(string recipeKey)
-    {
-        // Vérifier si la clé existe dans le dictionnaire
-        if (allAlcoholRecipe.CheckKey(recipeKey))
-        {
-            // Récupérer l'objet 'AlcoholRecipe' associé à cette clé
-            AlcoholRecipe recipe = allAlcoholRecipe[recipeKey] as AlcoholRecipe;
-
-            if (recipe != null)
-            {
-                // Parcourir la liste des ingrédients
-                foreach (var ingredient in recipe.ingredients)
-                {
-                    // Vérifier si l'ingrédient est bien un ScriptableObject de type attendu
-                    if (ingredient != null)
-                    {
-                        // Afficher le nom de l'ingrédient
-                        Debug.Log("Ingredients : " + ingredient.name);
-                    }
-                }
-            }
-            else
-            {
-                Debug.LogError("La recette associée à cette clé n'est pas un 'AlcoholRecipe'.");
-            }
-        }
-        else
-        {
-            Debug.LogError("La clé de recette spécifiée n'existe pas dans le dictionnaire.");
+            pearText.text = Inventory.Instance.pearAmount.ToString() + " / " + pearRequired.ToString();
         }
     }
 }

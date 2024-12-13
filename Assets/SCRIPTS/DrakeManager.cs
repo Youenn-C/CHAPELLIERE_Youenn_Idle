@@ -6,25 +6,8 @@ using UnityEngine.UI;
 
 public class DrakeManager : MonoBehaviour
 {
-    public static DrakeManager Instance { get; private set; }
-
     [Header("Drake"), Space(5)]
     [SerializeField] private TMP_Text richnessText;
-
-    
-
-    private void Awake()
-    {
-        // Singleton pour assurer qu'il n'y a qu'une seule instance de ScoreManager
-        if (Instance == null)
-        {
-            Instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
 
     private void Start()
     {
@@ -37,7 +20,7 @@ public class DrakeManager : MonoBehaviour
         UpdateDrakeUI();
     }
 
-    private void UpdateDrakeUI()
+    public void UpdateDrakeUI()
     {
         if (richnessText != null)
         {

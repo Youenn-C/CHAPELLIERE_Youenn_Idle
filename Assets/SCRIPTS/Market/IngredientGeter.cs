@@ -9,13 +9,15 @@ public class IngredientGeter : MonoBehaviour
     [SerializeField] private Ingredients _ingredientScriptableObject;
     
     [Header("Locals variables"), Space(5)]
-    public string ingredientName;
+    public string ingredientNameSTRING;
+    public TMP_Text ingredientName;
     public int ingedientpurchasePrice;
     public Sprite ingedientImage;
     
     void Start()
     {
-        ingredientName = _ingredientScriptableObject.ingredientName;
+        ingredientNameSTRING = _ingredientScriptableObject.ingredientName;
+        ingredientName.text = ingredientNameSTRING;
         ingedientpurchasePrice = _ingredientScriptableObject.ingedientpurchasePrice;
         ingedientImage = _ingredientScriptableObject.ingedientImage;
     }
