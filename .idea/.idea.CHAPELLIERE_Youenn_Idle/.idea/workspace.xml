@@ -6,21 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="15f19071-a9e0-4109-87ac-8f9314201cc8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CHAPELLIERE_Youenn_Idle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CHAPELLIERE_Youenn_Idle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Astuces_Cliker.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/BookMark/PanScrollbar.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/BookMark/PanScrollbar.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Distillery/Distillery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Distillery/Distillery.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/DrakeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/DrakeManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Inventory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Market/IngredientGeter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Market/IngredientGeter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Market/SellIngredients.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Market/SellIngredients.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Tavernier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Tavernier.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Market Movement/Horizontal Layout.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Market Movement/Horizontal Layout.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Market Movement/pos1_into_pos2.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Market Movement/pos1_into_pos2.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Market Movement/pos2_into_pos1.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Market Movement/pos2_into_pos1.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Market Movement/pos2_into_pos3.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Market Movement/pos2_into_pos3.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Market Movement/pos3_into_pos2.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Market Movement/pos3_into_pos2.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Market/ContainerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Market/ContainerMovement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,8 +57,16 @@
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../Build/Windows version/Clicker_CHAPELLIERE_Youenn.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="E:\2 - Cours\2 - année_n°2\4 - Programmation\3 - Clicker\Build\Windows version" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.48f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="D:\Unity_Editor_Versions\2022.3.48f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath &quot;E:\2 - Cours\2 - année_n°2\4 - Programmation\3 - Clicker\CHAPELLIERE_Youenn_Idle&quot; -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="E:\2 - Cours\2 - année_n°2\4 - Programmation\3 - Clicker\CHAPELLIERE_Youenn_Idle" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -74,7 +74,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.48f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="D:\Unity_Editor_Versions\2022.3.48f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;E:\2 - Cours\2 - année_n°2\4 - Programmation\3 - Clicker\CHAPELLIERE_Youenn_Idle&quot; -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="E:\2 - Cours\2 - année_n°2\4 - Programmation\3 - Clicker\CHAPELLIERE_Youenn_Idle" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -120,6 +120,8 @@
       <workItem from="1733837841107" duration="1044000" />
       <workItem from="1733999418425" duration="16679000" />
       <workItem from="1734090346984" duration="12750000" />
+      <workItem from="1734117397321" duration="467000" />
+      <workItem from="1734256279557" duration="3883000" />
     </task>
     <servers />
   </component>
