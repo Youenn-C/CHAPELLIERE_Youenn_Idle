@@ -16,9 +16,6 @@ public class Inventory : MonoBehaviour
     public int yeastAmount;
     public int whiteGrapesAmount;
     public int exoticOrangeEssenceAmount;
-    public int largeWormwoodAmount;
-    public int smallWormwoodAmount;
-    public int greenAniseAmount;
     public int fennelAmount;
     public int lemonBalmAmount;
     public int hyssopAmount;
@@ -27,12 +24,11 @@ public class Inventory : MonoBehaviour
     public int brandyAmount;
     public int wiskeyAmount;
     public int cognacAmount;
-    public int GrandMarnierAmount;
+    public int grandMarnierAmount;
     public int absintheAmount;
     
     private void Awake()
     {
-        // Singleton pour assurer qu'il n'y a qu'une seule instance de ScoreManager
         if (Instance == null)
         {
             Instance = this;
@@ -63,12 +59,6 @@ public class Inventory : MonoBehaviour
                 return whiteGrapesAmount;
             case "exoticOrangeEssence":
                 return exoticOrangeEssenceAmount;
-            case "largeWormwood":
-                return largeWormwoodAmount;
-            case "smallWormwood":
-                return smallWormwoodAmount;
-            case "greenAnise":
-                return greenAniseAmount;
             case "fennel":
                 return fennelAmount;
             case "lemonBalm":
@@ -108,15 +98,6 @@ public class Inventory : MonoBehaviour
                 break;
             case "exoticOrangeEssence":
                 exoticOrangeEssenceAmount++;
-                break;
-            case "largeWormwood":
-                largeWormwoodAmount++;
-                break;
-            case "smallWormwood":
-                smallWormwoodAmount++;
-                break;
-            case "greenAnise":
-                greenAniseAmount++;
                 break;
             case "fennel":
                 fennelAmount++;

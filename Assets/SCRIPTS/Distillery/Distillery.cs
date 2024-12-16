@@ -13,9 +13,30 @@ public class Distillery : MonoBehaviour
     [SerializeField] private TMP_Text appleText;
     [SerializeField] private TMP_Text cherryText;
     [SerializeField] private TMP_Text pearText;
+    [Space(5)]
+    [SerializeField] private TMP_Text cerealsText;
+    [SerializeField] private TMP_Text waterText;
+    [SerializeField] private TMP_Text yeastText;
+    [Space(5)]
+    [SerializeField] private TMP_Text whiteGrapesText;
+    [Space(5)]
+    [SerializeField] private TMP_Text exoticOrangesText;
+    [Space(5)]
+    [SerializeField] private TMP_Text lemonBalmText;
+    [SerializeField] private TMP_Text fennelText;
+    [SerializeField] private TMP_Text hyssopText;
+    
     
     [Header("Buttons"), Space(5)]
     [SerializeField] private Button brandyBTN;
+    [Space(5)]
+    [SerializeField] private Button whiskeyBTN;
+    [Space(5)]
+    [SerializeField] private Button cognacBTN;
+    [Space(5)]
+    [SerializeField] private Button grandMarnierBTN;
+    [Space(5)]
+    [SerializeField] private Button absintheBTN;
     
     [Header("Sound"), Space(5)]
     [SerializeField] private AudioSource _audioSource;
@@ -52,11 +73,8 @@ public class Distillery : MonoBehaviour
     private int[] GrandMarnierIngredientsRequired;
     
     [Header("Absinthe"), Space(5)]
-    [SerializeField] private int largeWormwoodRequired;
-    [SerializeField] private int smallWormwoodRequired;
-    [SerializeField] private int greenAniseRequired;
-    [SerializeField] private int fennelRequired;
     [SerializeField] private int lemonBalmRequired;
+    [SerializeField] private int fennelRequired;
     [SerializeField] private int hyssopRequired;
     [Space(5)]
     [SerializeField] private TMP_Text bottleOfAbsintheAmount;
@@ -68,7 +86,7 @@ public class Distillery : MonoBehaviour
         wiskeyIngredientsRequired = new int[] {cerealsRequired, waterRequired, yeastRequired};
         cognacIngredientsRequired = new int[] {whiteGrapesRequired};
         GrandMarnierIngredientsRequired = new int[] {exoticOrangeEssenceRequired};
-        absintheIngredientsRequired = new int[] {largeWormwoodRequired, smallWormwoodRequired, greenAniseRequired, fennelRequired, lemonBalmRequired, hyssopRequired};
+        absintheIngredientsRequired = new int[] {lemonBalmRequired, fennelRequired, hyssopRequired};
         
         UpdateBrandyUI();
     }
