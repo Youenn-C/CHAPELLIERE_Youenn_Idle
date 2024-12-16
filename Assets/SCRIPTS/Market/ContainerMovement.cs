@@ -1,9 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ContainerMovement : MonoBehaviour
 {
+    [Header("References"), Space(5)]
+    [SerializeField] private GameObject _mainContainer;
+    
     [Header("Variables"), Space(5)] 
     [SerializeField] private int _currentPosition;
     [SerializeField] private Transform[] _positions;
@@ -17,12 +18,6 @@ public class ContainerMovement : MonoBehaviour
         _animator = GetComponent<Animator>();
         _animator.applyRootMotion = false;
         _currentPosition = 1;
-
-        // Vérifie que les conteneurs sont bien configurés
-        if (_positions.Length != 3)
-        {
-            Debug.LogError("Assurez-vous de définir exactement 3 conteneurs dans l'inspecteur !");
-        }
     }
 
     // Déplacement vers la gauche
@@ -33,6 +28,7 @@ public class ContainerMovement : MonoBehaviour
             int targetPosition = _currentPosition - 1; // Position cible
             PlayAnimation(_currentPosition, targetPosition);
             _currentPosition = targetPosition; // Met à jour la position actuelle
+            transform.position = _positions[_currentPosition - 1].position;
         }
     }
 
@@ -44,6 +40,7 @@ public class ContainerMovement : MonoBehaviour
             int targetPosition = _currentPosition + 1; // Position cible
             PlayAnimation(_currentPosition, targetPosition);
             _currentPosition = targetPosition; // Met à jour la position actuelle
+            Debug.Log(_positions[_currentPosition + 1].position);
         }
     }
 
@@ -63,5 +60,6 @@ public class ContainerMovement : MonoBehaviour
     {
         // Déplace explicitement à la position finale
         transform.position = _positions[_currentPosition - 1].position;
+
     }
 }

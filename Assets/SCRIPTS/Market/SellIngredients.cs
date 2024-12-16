@@ -21,10 +21,6 @@ public class SellIngredients : MonoBehaviour
         _priceText.text = _ingredientGeter.ingedientpurchasePrice.ToString();  // Affiche le prix
         _price = _ingredientGeter.ingedientpurchasePrice;  // Définit le prix de l'ingrédient
         UpdateQuantityText();  // Met à jour la quantité affichée
-
-        // Pour déboguer (facultatif)
-        Debug.Log(_ingredientGeter.ingredientNameSTRING);
-        Debug.Log(_nameText.text);  // Affiche le texte du nom de l'ingrédient dans le Debug
     }
 
     public void Buy()
