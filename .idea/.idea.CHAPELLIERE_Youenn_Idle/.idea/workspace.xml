@@ -6,19 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="15f19071-a9e0-4109-87ac-8f9314201cc8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CHAPELLIERE_Youenn_Idle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CHAPELLIERE_Youenn_Idle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Distillery/Distillery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Distillery/Distillery.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Inventory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Green_Anise.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Green_Anise.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Large_Wormwood.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Large_Wormwood.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Lemon_Balm.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Lemon_Balm.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Lemon_Balm.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Lemon_Balm.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Small_Wormwood.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Small_Wormwood.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sound/SE_Brewing_Stand.MP3" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sound/SE_Brewing_Stand.MP3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sound/SE_Brewing_Stand.MP3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sound/SE_Brewing_Stand.MP3.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Tavernier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Tavernier.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +59,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:\Unity_Editor_Versions\2022.3.48f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="D:\2022.3.48f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath &quot;E:\2 - Cours\2 - année_n°2\4 - Programmation\3 - Clicker\CHAPELLIERE_Youenn_Idle&quot; -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="E:\2 - Cours\2 - année_n°2\4 - Programmation\3 - Clicker\CHAPELLIERE_Youenn_Idle" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -79,7 +67,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:\Unity_Editor_Versions\2022.3.48f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="D:\2022.3.48f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;E:\2 - Cours\2 - année_n°2\4 - Programmation\3 - Clicker\CHAPELLIERE_Youenn_Idle&quot; -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="E:\2 - Cours\2 - année_n°2\4 - Programmation\3 - Clicker\CHAPELLIERE_Youenn_Idle" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -130,6 +118,7 @@
       <workItem from="1734334773930" duration="1920000" />
       <workItem from="1734361627850" duration="9000" />
       <workItem from="1734378423562" duration="3420000" />
+      <workItem from="1734424600076" duration="902000" />
     </task>
     <servers />
   </component>
