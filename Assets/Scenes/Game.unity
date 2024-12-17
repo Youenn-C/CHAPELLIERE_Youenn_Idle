@@ -5861,37 +5861,6 @@ RectTransform:
   m_AnchoredPosition: {x: 267.7, y: 60}
   m_SizeDelta: {x: 521.9365, y: 65.242096}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &495071215
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 495071216}
-  m_Layer: 0
-  m_Name: ----------------------------
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &495071216
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 495071215}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1217386306}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &498664035
 GameObject:
   m_ObjectHideFlags: 0
@@ -6202,7 +6171,7 @@ GameObject:
   - component: {fileID: 524519772}
   - component: {fileID: 524519771}
   m_Layer: 5
-  m_Name: Upgrade
+  m_Name: Buy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8477,7 +8446,7 @@ GameObject:
   - component: {fileID: 738031575}
   - component: {fileID: 738031574}
   m_Layer: 5
-  m_Name: Text
+  m_Name: buy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14463,7 +14432,6 @@ Transform:
   - {fileID: 1037355608}
   - {fileID: 1384314321}
   - {fileID: 1621617854}
-  - {fileID: 495071216}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1217732922
@@ -15378,8 +15346,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -70.72449, y: -29.795}
-  m_SizeDelta: {x: 242.5509, y: 83.591}
+  m_AnchoredPosition: {x: -71.65906, y: -44.748505}
+  m_SizeDelta: {x: 251.8969, y: 53.684}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1289447022
 MonoBehaviour:
@@ -15401,7 +15369,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Description
+  m_text: profil par clic X2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 92a5619a1ccfb5043aeb7a5e63525106, type: 2}
   m_sharedMaterial: {fileID: -4008336675322173450, guid: 92a5619a1ccfb5043aeb7a5e63525106, type: 2}
@@ -15428,10 +15396,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45
+  m_fontSize: 44.1
   m_fontSizeBase: 45
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -17180,6 +17148,7 @@ GameObject:
   - component: {fileID: 1384314322}
   - component: {fileID: 1384314324}
   - component: {fileID: 1384314325}
+  - component: {fileID: 1384314326}
   m_Layer: 0
   m_Name: Game_Manager
   m_TagString: Untagged
@@ -17229,6 +17198,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drakeManager: {fileID: 1384314324}
+  scoreManager: {fileID: 1384314322}
+  upgrade: {fileID: 0}
   _settingsWindow: {fileID: 1471274534}
   _soundEffect: {fileID: 8300000, guid: 4a23fd329f0206c4494c00d0512a3050, type: 3}
   _audioSource: {fileID: 2134315880}
@@ -17274,6 +17245,26 @@ MonoBehaviour:
   cognacAmount: 0
   grandMarnierAmount: 0
   absintheAmount: 0
+--- !u!114 &1384314326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384314320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3eab8ec79e92ebd47a4dddb3e59d65c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _defaultClic: 2
+  _strength: 1
+  _tablesCurrentLevel: 0
+  _tablesCurrentLevelText: {fileID: 1126563532}
+  _tablesUpgradeButton: {fileID: 524519771}
+  _barrelCurrentLevel: 0
+  _barrelCurrentLevelText: {fileID: 433184160}
+  _barrelUpgradeButton: {fileID: 1609189431}
 --- !u!1 &1402168381
 GameObject:
   m_ObjectHideFlags: 0
@@ -17436,7 +17427,7 @@ GameObject:
   - component: {fileID: 1416890955}
   - component: {fileID: 1416890954}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: buy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17481,7 +17472,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Upgrade
+  m_text: Buy
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 92a5619a1ccfb5043aeb7a5e63525106, type: 2}
   m_sharedMaterial: {fileID: -4008336675322173450, guid: 92a5619a1ccfb5043aeb7a5e63525106, type: 2}
@@ -22723,9 +22714,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 106.63, y: 41}
+  m_AnchoredPosition: {x: -115.3, y: 0.000015259}
   m_SizeDelta: {x: 181.52, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.47425655, y: 0.50000024}
 --- !u!114 &1827818995
 MonoBehaviour:
   m_ObjectHideFlags: 0

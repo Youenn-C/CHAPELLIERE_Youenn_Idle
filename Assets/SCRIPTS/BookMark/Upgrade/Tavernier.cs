@@ -47,7 +47,7 @@ public class Tavernier : MonoBehaviour
         Debug.Log(drakesAmount);
         
         GameManager.Instance.drakeManager.AddDrake(drakesAmount);
-        ScoreManager.Instance.AddScore(1);
+        GameManager.Instance.scoreManager.AddScore(1);
     }
     
     public IEnumerator WorkTavernier()

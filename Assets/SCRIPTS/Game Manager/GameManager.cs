@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
     
     [Header("Sub Managers"), Space(5)]
     public DrakeManager drakeManager;
+    public ScoreManager scoreManager;
+    public Upgrade upgrade;
     
     [Header("Settings"), Space(5)]
     [SerializeField] private GameObject _settingsWindow;
@@ -14,6 +16,8 @@ public class GameManager : MonoBehaviour
     [Header("Sound Effect"), Space(5)]
     [SerializeField] private AudioClip _soundEffect;
     [SerializeField] private AudioSource _audioSource;
+
+    
     
     private void Awake()
     {
@@ -30,8 +34,8 @@ public class GameManager : MonoBehaviour
 
     public void ServeTheGuest()
     {
-        drakeManager.AddDrake(2);
-        ScoreManager.Instance.AddScore(2);
+        drakeManager.AddDrake(upgrade._defaultClic * upgrade._strength);
+        scoreManager.AddScore(2);
         
         _audioSource.PlayOneShot(_soundEffect);
     }
@@ -45,4 +49,7 @@ public class GameManager : MonoBehaviour
     {
         _settingsWindow.SetActive(false);
     }
+
+    
+
 }
