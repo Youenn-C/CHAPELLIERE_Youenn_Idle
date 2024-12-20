@@ -6,7 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="15f19071-a9e0-4109-87ac-8f9314201cc8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CHAPELLIERE_Youenn_Idle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CHAPELLIERE_Youenn_Idle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Tavernier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Tavernier.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Market Movement/Horizontal Layout.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Market Movement/Horizontal Layout.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Market Movement/pos1_into_pos2.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Market Movement/pos1_into_pos2.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Market Movement/pos2_into_pos1.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Market Movement/pos2_into_pos1.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Market Movement/pos2_into_pos3.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Market Movement/pos2_into_pos3.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Market Movement/pos3_into_pos2.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Market Movement/pos3_into_pos2.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/alice_in_wonderland/Alice_in_Wonderland_3 SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/alice_in_wonderland/Alice_in_Wonderland_3 SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/BookMark/Market/ContainerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/BookMark/Market/ContainerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/BookMark/Upgrade/Tavernier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/BookMark/Upgrade/Tavernier.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/BookMark/Upgrade/Upgrade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/BookMark/Upgrade/Upgrade.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Game Manager/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Game Manager/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +73,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:\2022.3.48f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.48f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath &quot;E:\2 - Cours\2 - année_n°2\4 - Programmation\3 - Clicker\CHAPELLIERE_Youenn_Idle&quot; -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="E:\2 - Cours\2 - année_n°2\4 - Programmation\3 - Clicker\CHAPELLIERE_Youenn_Idle" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -67,7 +81,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:\2022.3.48f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.48f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;E:\2 - Cours\2 - année_n°2\4 - Programmation\3 - Clicker\CHAPELLIERE_Youenn_Idle&quot; -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="E:\2 - Cours\2 - année_n°2\4 - Programmation\3 - Clicker\CHAPELLIERE_Youenn_Idle" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -84,10 +98,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="24256">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="24256" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -119,6 +133,7 @@
       <workItem from="1734361627850" duration="9000" />
       <workItem from="1734378423562" duration="3420000" />
       <workItem from="1734424600076" duration="902000" />
+      <workItem from="1734696583694" duration="12952000" />
     </task>
     <servers />
   </component>

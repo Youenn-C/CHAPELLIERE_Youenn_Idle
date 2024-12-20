@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
 
     public void ServeTheGuest()
     {
-        drakeManager.AddDrake(upgrade._defaultClic * upgrade._strength);
+        drakeManager.AddDrake(Mathf.Abs(upgrade._defaultClic * upgrade._strength));
         scoreManager.AddScore(2);
         
         _audioSource.PlayOneShot(_soundEffect);

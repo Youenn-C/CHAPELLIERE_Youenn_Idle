@@ -12,6 +12,7 @@ public class Tavernier : MonoBehaviour
     [SerializeField] private GameObject _levelUpButton;
     [SerializeField] private Button _tavernierButton;
     [SerializeField] private int tavernierLevel;
+    [SerializeField] private int tavernierMaxLevel = 20;
     [SerializeField] private int multiplyingFactor = 1;
     [SerializeField] private TMP_Text _levelText;
     
@@ -26,17 +27,27 @@ public class Tavernier : MonoBehaviour
 
     public void UpgradeTavernier()
     {
-        if (1 <= tavernierLevel) tavernierLevel++;
-        else if (tavernierLevel == 0)
+        if (tavernierLevel < tavernierMaxLevel)
         {
-            tavernierLevel = 1;
-            _empoyTextButton.SetActive(false);
-            _levelUpButton.SetActive(true);
-            StartCoroutine(WorkTavernier());
-        }
-        multiplyingFactor *= 2;
+            tavernierLevel++;
+            multiplyingFactor = Mathf.Abs(multiplyingFactor *= 2);
+            _levelText.text = "Lvl : " + tavernierLevel.ToString();
 
-        StartCoroutine(LevelUpCooldown());
+            if (tavernierLevel == 1)
+            {
+                tavernierLevel = 1;
+                multiplyingFactor = Mathf.Abs(multiplyingFactor *= 2);
+                _levelText.text = "Lvl : " + tavernierLevel.ToString();
+                _empoyTextButton.SetActive(false);
+                _levelUpButton.SetActive(true);
+                StartCoroutine(WorkTavernier());
+            }
+            
+            if (tavernierLevel >= tavernierMaxLevel)
+            {
+                _tavernierButton.interactable = false;
+            }
+        }
     }
     
     private void ServeTheGuestByTavernier()
@@ -65,6 +76,6 @@ public class Tavernier : MonoBehaviour
         _tavernierButton.interactable = false;
         yield return new WaitForSeconds(0.25f);
         _tavernierButton.interactable = true;
-        _levelText.text = "Lvl : " + tavernierLevel.ToString();
+        
     }
 }
