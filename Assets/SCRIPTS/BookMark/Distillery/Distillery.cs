@@ -44,48 +44,48 @@ public class Distillery : MonoBehaviour
     // -------------------------------------------------------------
     
     [Header("Brandy"), Space(5)]
-    [SerializeField] private int appleRequired;
-    [SerializeField] private int cherryRequired;
-    [SerializeField] private int pearRequired;
+    [SerializeField] private int _appleRequired;
+    [SerializeField] private int _cherryRequired;
+    [SerializeField] private int _pearRequired;
     [Space(5)]
-    [SerializeField] private TMP_Text bottleOfBrandyAmount;
+    [SerializeField] private TMP_Text _bottleOfBrandyAmount;
     private int[] brandyIngredientsRequired;
     
     [Header("Wiskey"), Space(5)]
-    [SerializeField] private int cerealsRequired;
-    [SerializeField] private int waterRequired;
-    [SerializeField] private int yeastRequired;
+    [SerializeField] private int _cerealsRequired;
+    [SerializeField] private int _waterRequired;
+    [SerializeField] private int _yeastRequired;
     [Space(5)]
-    [SerializeField] private TMP_Text bottleOfWiskeyAmount;
+    [SerializeField] private TMP_Text _bottleOfWiskeyAmount;
     private int[] wiskeyIngredientsRequired;
         
     [Header("Cognac"), Space(5)]
-    [SerializeField] private int whiteGrapesRequired;
+    [SerializeField] private int _whiteGrapesRequired;
     [Space(5)]
-    [SerializeField] private TMP_Text bottleOfCognacAmount;
+    [SerializeField] private TMP_Text _bottleOfCognacAmount;
     private int[] cognacIngredientsRequired;
     
     [Header("Grand Marnier"), Space(5)]
-    [SerializeField] private int exoticOrangeEssenceRequired;
+    [SerializeField] private int _exoticOrangeEssenceRequired;
     [Space(5)]
-    [SerializeField] private TMP_Text bottleOfGrandMarnierAmount;
+    [SerializeField] private TMP_Text _bottleOfGrandMarnierAmount;
     private int[] GrandMarnierIngredientsRequired;
     
     [Header("Absinthe"), Space(5)]
-    [SerializeField] private int lemonBalmRequired;
-    [SerializeField] private int fennelRequired;
-    [SerializeField] private int hyssopRequired;
+    [SerializeField] private int _lemonBalmRequired;
+    [SerializeField] private int _fennelRequired;
+    [SerializeField] private int _hyssopRequired;
     [Space(5)]
-    [SerializeField] private TMP_Text bottleOfAbsintheAmount;
+    [SerializeField] private TMP_Text _bottleOfAbsintheAmount;
     private int[] absintheIngredientsRequired;
     
     void Start()
     {
-        brandyIngredientsRequired = new int[] {appleRequired, cherryRequired, pearRequired};
-        wiskeyIngredientsRequired = new int[] {cerealsRequired, waterRequired, yeastRequired};
-        cognacIngredientsRequired = new int[] {whiteGrapesRequired};
-        GrandMarnierIngredientsRequired = new int[] {exoticOrangeEssenceRequired};
-        absintheIngredientsRequired = new int[] {lemonBalmRequired, fennelRequired, hyssopRequired};
+        brandyIngredientsRequired = new int[] {_appleRequired, _cherryRequired, _pearRequired};
+        wiskeyIngredientsRequired = new int[] {_cerealsRequired, _waterRequired, _yeastRequired};
+        cognacIngredientsRequired = new int[] {_whiteGrapesRequired};
+        GrandMarnierIngredientsRequired = new int[] {_exoticOrangeEssenceRequired};
+        absintheIngredientsRequired = new int[] {_lemonBalmRequired, _fennelRequired, _hyssopRequired};
         
         UpdateBrandyUI();
     }
@@ -122,17 +122,19 @@ public class Distillery : MonoBehaviour
 
     public void PrepareBrandy()
     {
-        int[] requiredAmounts = {appleRequired, cherryRequired, pearRequired};
+        int[] requiredAmounts = {_appleRequired, _cherryRequired, _pearRequired};
         int[] availableAmounts = { Inventory.Instance.appleAmount, Inventory.Instance.cherryAmount, Inventory.Instance.pearAmount };
         bool allResourcesSufficient = requiredAmounts.Zip(availableAmounts, (required, available) => available >= required).All(x => x);
 
         if (allResourcesSufficient)
         {
-            Inventory.Instance.appleAmount -= appleRequired;
-            Inventory.Instance.cherryAmount -= cherryRequired;
-            Inventory.Instance.pearAmount -= pearRequired;
+            Inventory.Instance.appleAmount -= _appleRequired;
+            Inventory.Instance.cherryAmount -= _cherryRequired;
+            Inventory.Instance.pearAmount -= _pearRequired;
             
             Inventory.Instance.brandyAmount ++;
+            
+            _bottleOfBrandyAmount.text = "Quantity Owned : " + Inventory.Instance.brandyAmount.ToString();
             
             _audioSource.PlayOneShot(_soundEffect);
         }
@@ -142,17 +144,17 @@ public class Distillery : MonoBehaviour
     {
         if (appleText != null)
         {
-            appleText.text = Inventory.Instance.appleAmount.ToString() + " / " + appleRequired.ToString();
+            appleText.text = Inventory.Instance.appleAmount.ToString() + " / " + _appleRequired.ToString();
         }
         
         if (cherryText != null)
         {
-            cherryText.text = Inventory.Instance.cherryAmount.ToString() + " / " + cherryRequired.ToString();
+            cherryText.text = Inventory.Instance.cherryAmount.ToString() + " / " + _cherryRequired.ToString();
         }
         
         if (pearText != null)
         {
-            pearText.text = Inventory.Instance.pearAmount.ToString() + " / " + pearRequired.ToString();
+            pearText.text = Inventory.Instance.pearAmount.ToString() + " / " + _pearRequired.ToString();
         }
     }
 }
