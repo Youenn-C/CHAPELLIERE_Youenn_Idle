@@ -6,8 +6,15 @@ public class ContainerMovement : MonoBehaviour
     [Header("Referances"), Space(5)]
     [SerializeField] private int _currentPage = 1;
     
+    [SerializeField] private GameObject _containerMovement;
+    
     [SerializeField] private Animator _animator;
 
+    void Start()
+    {
+        _animator = _containerMovement.GetComponent<Animator>();
+    }
+    
     public void Go_To_Page_1()
     {
         if (_currentPage == 2)
@@ -51,5 +58,10 @@ public class ContainerMovement : MonoBehaviour
             _animator.SetTrigger("Page_2_To_Page_3");
             _currentPage = 3;
         }
+    }
+
+    public void ResetCurrentPage()
+    {
+        if (_currentPage != 1) _currentPage = 1;
     }
 }
