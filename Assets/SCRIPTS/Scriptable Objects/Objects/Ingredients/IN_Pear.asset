@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: IN_Pear
   m_EditorClassIdentifier: 
   ingredientName: Pear
-  ingedientpurchasePrice: 0
+  ingedientpurchasePrice: 3
   ingedientImage: {fileID: 0}

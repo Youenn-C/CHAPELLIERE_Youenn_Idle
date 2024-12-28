@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: IN_Oranges
   m_EditorClassIdentifier: 
   ingredientName: Exotic Oranges Essence
-  ingedientpurchasePrice: 0
+  ingedientpurchasePrice: 12
   ingedientImage: {fileID: 0}

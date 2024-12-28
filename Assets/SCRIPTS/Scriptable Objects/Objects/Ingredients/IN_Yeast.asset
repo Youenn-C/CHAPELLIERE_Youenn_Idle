@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: IN_Yeast
   m_EditorClassIdentifier: 
   ingredientName: Yeast
-  ingedientpurchasePrice: 0
+  ingedientpurchasePrice: 11
   ingedientImage: {fileID: 0}

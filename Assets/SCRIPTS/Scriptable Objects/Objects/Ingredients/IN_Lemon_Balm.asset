@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: IN_Lemon_Balm
   m_EditorClassIdentifier: 
   ingredientName: Lemon_Balm
-  ingedientpurchasePrice: 0
+  ingedientpurchasePrice: 4
   ingedientImage: {fileID: 0}

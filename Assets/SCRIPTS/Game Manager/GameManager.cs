@@ -17,7 +17,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private AudioClip _soundEffect;
     [SerializeField] private AudioSource _audioSource;
 
-    
+    [Header("Variables"), Space(5)]
+    public float priceMultiplier = 1;
     
     private void Awake()
     {
@@ -49,7 +50,4 @@ public class GameManager : MonoBehaviour
     {
         _settingsWindow.SetActive(false);
     }
-
-    
-
 }

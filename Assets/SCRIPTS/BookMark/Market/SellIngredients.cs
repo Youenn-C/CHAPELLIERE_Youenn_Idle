@@ -18,8 +18,8 @@ public class SellIngredients : MonoBehaviour
     {
         // Récupère le nom de l'ingrédient depuis le script IngredientGeter
         _nameText.text = _ingredientGeter.ingredientNameSTRING;  // Utilisation de ingredientNameSTRING, pas de TMP_Text
-        _priceText.text = _ingredientGeter.ingedientpurchasePrice.ToString();  // Affiche le prix
-        _price = _ingredientGeter.ingedientpurchasePrice;  // Définit le prix de l'ingrédient
+        _priceText.text = "Price : " + _ingredientGeter.ingedientpurchasePrice.ToString();  // Affiche le prix
+        _price = Mathf.RoundToInt(_ingredientGeter.ingedientpurchasePrice * GameManager.Instance.priceMultiplier);  // Définit le prix de l'ingrédient
         UpdateQuantityText();  // Met à jour la quantité affichée
     }
 
@@ -36,9 +36,19 @@ public class SellIngredients : MonoBehaviour
             
             GameManager.Instance.drakeManager.UpdateDrakeUI();
 
+            GameManager.Instance.priceMultiplier *= 1.02f;
+
             // Met à jour l'affichage de la quantité de l'ingrédient
             UpdateQuantityText();
+            UpdatePriceText();
+
         }
+    }
+
+    private void UpdatePriceText()
+    {
+        _priceText.text = "Price : " + _price.ToString();
+        _price = Mathf.RoundToInt(_price * GameManager.Instance.priceMultiplier);
     }
     
     private void UpdateQuantityText()

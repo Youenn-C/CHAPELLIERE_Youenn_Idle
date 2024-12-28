@@ -7,7 +7,32 @@
     <list default="true" id="15f19071-a9e0-4109-87ac-8f9314201cc8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CHAPELLIERE_Youenn_Idle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CHAPELLIERE_Youenn_Idle/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/BookMark/Market/ContainerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/BookMark/Market/ContainerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/BookMark/Market/SellIngredients.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/BookMark/Market/SellIngredients.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Game Manager/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Game Manager/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Cereals.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Cereals.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Cherry.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Cherry.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Fennel.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Fennel.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Hyssop.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Hyssop.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Lemon_Balm.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Lemon_Balm.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Oranges.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Oranges.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Pear.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Pear.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Water.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Water.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_White_Grapes.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_White_Grapes.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Yeast.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Yeast.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprite/Alcohol_Bottle.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprite/Alcohol_Bottle.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprite/Alcohol_ingredient.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprite/Alcohol_ingredient.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprite/BookMark/Distillery_ticket.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprite/BookMark/Distillery_ticket.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprite/BookMark/Distillery_ticket_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprite/BookMark/Distillery_ticket_hover.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprite/BookMark/Marcket_ticket.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprite/BookMark/Marcket_ticket.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprite/BookMark/Marcket_ticket_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprite/BookMark/Marcket_ticket_hover.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprite/BookMark/Upgrade_ticket.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprite/BookMark/Upgrade_ticket.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprite/BookMark/Upgrade_ticket_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprite/BookMark/Upgrade_ticket_hover.png.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,6 +149,8 @@
       <workItem from="1734778444274" duration="1702000" />
       <workItem from="1734975709572" duration="309000" />
       <workItem from="1735116807988" duration="731000" />
+      <workItem from="1735221089764" duration="1940000" />
+      <workItem from="1735395925663" duration="1618000" />
     </task>
     <servers />
   </component>

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: IN_Water
   m_EditorClassIdentifier: 
   ingredientName: Water
-  ingedientpurchasePrice: 0
+  ingedientpurchasePrice: 15
   ingedientImage: {fileID: 0}

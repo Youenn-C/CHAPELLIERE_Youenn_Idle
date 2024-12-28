@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: IN_White_Grapes
   m_EditorClassIdentifier: 
   ingredientName: White Grapes
-  ingedientpurchasePrice: 0
+  ingedientpurchasePrice: 17
   ingedientImage: {fileID: 0}
