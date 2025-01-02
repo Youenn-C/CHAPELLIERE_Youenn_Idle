@@ -907,9 +907,9 @@ RectTransform:
   - {fileID: 854318635}
   m_Father: {fileID: 216554734}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 243.5, y: -236.42978}
   m_SizeDelta: {x: 430, y: 125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &106089096
@@ -1890,9 +1890,9 @@ RectTransform:
   - {fileID: 706791573}
   m_Father: {fileID: 1851059584}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 243.5, y: -394.82446}
   m_SizeDelta: {x: 487, y: 789.6489}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &216554736
@@ -2398,9 +2398,9 @@ RectTransform:
   - {fileID: 692748853}
   m_Father: {fileID: 1340655212}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 243.50308, y: -714.99286}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 456.3971, y: 127.5467}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &269250523
@@ -2475,9 +2475,9 @@ RectTransform:
   - {fileID: 592869589}
   m_Father: {fileID: 1085974954}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 341.6667, y: -15}
   m_SizeDelta: {x: 95.9491, y: 49.4413}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &273299485
@@ -3156,26 +3156,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 454118676}
         m_TargetAssemblyTypeName: Distillery, Assembly-CSharp
-        m_MethodName: PrepareBrandy
-        m_Mode: 1
+        m_MethodName: PrepareAlcohol
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 454118675}
-        m_TargetAssemblyTypeName: Distillery, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: brandy
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &306020284
@@ -3389,9 +3377,9 @@ RectTransform:
   - {fileID: 249767187}
   m_Father: {fileID: 1583060331}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 243.5, y: -698.2191}
   m_SizeDelta: {x: 430, y: 125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &323317124
@@ -5232,6 +5220,14 @@ MonoBehaviour:
     _dictionaryEntries:
     - key: Brandy
       value: {fileID: 11400000, guid: d72f2449438708a4aa086b84f4482ec7, type: 2}
+    - key: Wiskey
+      value: {fileID: 11400000, guid: d59baa5f475253d4bb7824ac45ab6dd0, type: 2}
+    - key: Cognac
+      value: {fileID: 11400000, guid: 694feeea3450e5640a3c0334682f8612, type: 2}
+    - key: Grand Marnier
+      value: {fileID: 11400000, guid: ae01973c330dc0544980bb98fdd36ae6, type: 2}
+    - key: Absinthe
+      value: {fileID: 11400000, guid: 1931d27d10fe52349bca74117dd2d8e6, type: 2}
   appleText: {fileID: 2070307494}
   cherryText: {fileID: 1537536236}
   pearText: {fileID: 994479566}
@@ -5250,22 +5246,59 @@ MonoBehaviour:
   absintheBTN: {fileID: 692748854}
   _audioSource: {fileID: 2134315880}
   _soundEffect: {fileID: 8300000, guid: b9a52fbac498ff14eadc107d0d268f1c, type: 3}
-  _appleRequired: 0
-  _cherryRequired: 0
-  _pearRequired: 0
-  _bottleOfBrandyAmount: {fileID: 2091327467}
-  _cerealsRequired: 0
-  _waterRequired: 0
-  _yeastRequired: 0
-  _bottleOfWiskeyAmount: {fileID: 1601884572}
-  _whiteGrapesRequired: 0
-  _bottleOfCognacAmount: {fileID: 1565724380}
-  _exoticOrangeEssenceRequired: 0
-  _bottleOfGrandMarnierAmount: {fileID: 773583782}
-  _lemonBalmRequired: 0
-  _fennelRequired: 0
-  _hyssopRequired: 0
-  _bottleOfAbsintheAmount: {fileID: 1441690974}
+  alcoholRequirements:
+  - alcoholName: brandy
+    ingredientTexts:
+    - {fileID: 2070307494}
+    - {fileID: 1537536236}
+    - {fileID: 994479566}
+    ingredientNames:
+    - apple
+    - cherry
+    - pear
+    requiredAmounts: 030000000300000003000000
+    bottleAmountText: {fileID: 2091327467}
+    prepareButton: {fileID: 306020283}
+  - alcoholName: wiskey
+    ingredientTexts:
+    - {fileID: 205557005}
+    - {fileID: 1116683354}
+    - {fileID: 1163472351}
+    ingredientNames:
+    - cereals
+    - water
+    - yeast
+    requiredAmounts: 040000000400000004000000
+    bottleAmountText: {fileID: 1601884572}
+    prepareButton: {fileID: 1587463526}
+  - alcoholName: cognac
+    ingredientTexts:
+    - {fileID: 555849565}
+    ingredientNames:
+    - whiteGrapes
+    requiredAmounts: 05000000
+    bottleAmountText: {fileID: 1565724380}
+    prepareButton: {fileID: 1692282109}
+  - alcoholName: grandMarnier
+    ingredientTexts:
+    - {fileID: 467839777}
+    ingredientNames:
+    - exoticOrangeEssence
+    requiredAmounts: 06000000
+    bottleAmountText: {fileID: 773583782}
+    prepareButton: {fileID: 1528358326}
+  - alcoholName: absinthe
+    ingredientTexts:
+    - {fileID: 2032875983}
+    - {fileID: 67981402}
+    - {fileID: 1227635887}
+    ingredientNames:
+    - lemonBalm
+    - fennel
+    - hyssop
+    requiredAmounts: 070000000700000007000000
+    bottleAmountText: {fileID: 1441690974}
+    prepareButton: {fileID: 692748854}
 --- !u!4 &454118677
 Transform:
   m_ObjectHideFlags: 0
@@ -6498,9 +6531,9 @@ RectTransform:
   - {fileID: 1951138137}
   m_Father: {fileID: 1583060331}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 243.5, y: -236.42978}
   m_SizeDelta: {x: 430, y: 125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &514225165
@@ -7017,9 +7050,9 @@ RectTransform:
   - {fileID: 1587463525}
   m_Father: {fileID: 1340655212}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 243.50308, y: -241.57822}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 456.3971, y: 127.5467}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &534601614
@@ -7569,9 +7602,9 @@ RectTransform:
   - {fileID: 559670524}
   m_Father: {fileID: 1583060331}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 243.5, y: -390.35956}
   m_SizeDelta: {x: 430, y: 125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &560220980
@@ -7683,9 +7716,9 @@ RectTransform:
   - {fileID: 1528358325}
   m_Father: {fileID: 1340655212}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 243.50308, y: -557.188}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 456.3971, y: 127.5467}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &576837203
@@ -8219,7 +8252,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &656830754
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8635,26 +8668,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 454118676}
         m_TargetAssemblyTypeName: Distillery, Assembly-CSharp
-        m_MethodName: PrepareBrandy
-        m_Mode: 1
+        m_MethodName: PrepareAlcohol
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Distillery, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: absinthe
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &692748855
@@ -8868,9 +8889,9 @@ RectTransform:
   - {fileID: 2029250937}
   m_Father: {fileID: 216554734}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 243.5, y: -698.2191}
   m_SizeDelta: {x: 430, y: 125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &706791574
@@ -8985,9 +9006,9 @@ RectTransform:
   - {fileID: 888208703}
   m_Father: {fileID: 216554734}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 243.5, y: -82.5}
   m_SizeDelta: {x: 430, y: 125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &710573541
@@ -9606,9 +9627,9 @@ RectTransform:
   - {fileID: 2086139744}
   m_Father: {fileID: 216554734}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 243.5, y: -390.35956}
   m_SizeDelta: {x: 430, y: 125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &743354156
@@ -10840,9 +10861,9 @@ RectTransform:
   - {fileID: 306020282}
   m_Father: {fileID: 1340655212}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 243.50308, y: -83.773346}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 456.3971, y: 127.5467}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &817853967
@@ -13080,9 +13101,9 @@ RectTransform:
   - {fileID: 5074439}
   m_Father: {fileID: 1583060331}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 243.5, y: -82.5}
   m_SizeDelta: {x: 430, y: 125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &976557046
@@ -14240,9 +14261,9 @@ RectTransform:
   - {fileID: 366962613}
   m_Father: {fileID: 216554734}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 243.5, y: -544.2893}
   m_SizeDelta: {x: 430, y: 125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1119279795
@@ -15719,9 +15740,9 @@ RectTransform:
   - {fileID: 1582489529}
   m_Father: {fileID: 1583060331}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 243.5, y: -544.2893}
   m_SizeDelta: {x: 430, y: 125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1261563826
@@ -16323,9 +16344,9 @@ RectTransform:
   - {fileID: 953138434}
   m_Father: {fileID: 1085974954}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 205, y: -15}
   m_SizeDelta: {x: 95.9491, y: 49.4413}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1299803393
@@ -17267,7 +17288,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1340655212
 RectTransform:
   m_ObjectHideFlags: 0
@@ -19445,26 +19466,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 454118676}
         m_TargetAssemblyTypeName: Distillery, Assembly-CSharp
-        m_MethodName: PrepareBrandy
-        m_Mode: 1
+        m_MethodName: PrepareAlcohol
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Distillery, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: grandMarnier
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1528358327
@@ -20151,9 +20160,9 @@ RectTransform:
   - {fileID: 323317123}
   m_Father: {fileID: 1851059584}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 730.5, y: -394.82446}
   m_SizeDelta: {x: 487, y: 789.6489}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1583060332
@@ -20435,26 +20444,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 454118676}
         m_TargetAssemblyTypeName: Distillery, Assembly-CSharp
-        m_MethodName: PrepareBrandy
-        m_Mode: 1
+        m_MethodName: PrepareAlcohol
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Distillery, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: wiskey
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1587463527
@@ -21862,9 +21859,9 @@ RectTransform:
   - {fileID: 1666138135}
   m_Father: {fileID: 2034176556}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 243.5, y: -82.5}
   m_SizeDelta: {x: 430, y: 125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1679685707
@@ -22159,26 +22156,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 454118676}
         m_TargetAssemblyTypeName: Distillery, Assembly-CSharp
-        m_MethodName: PrepareBrandy
-        m_Mode: 1
+        m_MethodName: PrepareAlcohol
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Distillery, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: cognac
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1692282110
@@ -22657,9 +22642,9 @@ RectTransform:
   - {fileID: 1692282108}
   m_Father: {fileID: 1340655212}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 243.50308, y: -399.3831}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 456.3971, y: 127.5467}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1735803923
@@ -23342,9 +23327,9 @@ RectTransform:
   - {fileID: 348802168}
   m_Father: {fileID: 1085974954}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 68.333336, y: -15}
   m_SizeDelta: {x: 95.9491, y: 49.4413}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1784651602
@@ -26211,9 +26196,9 @@ RectTransform:
   - {fileID: 1679685706}
   m_Father: {fileID: 1851059584}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1217.5, y: -394.82446}
   m_SizeDelta: {x: 487, y: 789.6489}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2034176557

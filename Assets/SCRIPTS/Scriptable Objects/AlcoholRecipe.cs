@@ -7,5 +7,4 @@ public class AlcoholRecipe : ScriptableObject
 {
     public string recipeName;
     public ScriptableObject[] ingredients;
-    public Sprite ingedientImage;
 }

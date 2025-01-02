@@ -7,7 +7,7 @@ public class Distillery : MonoBehaviour
 {
     [Header("Recipe"), Space(5)]
     public MyDictionary<string, ScriptableObject> allAlcoholRecipe = new MyDictionary<string, ScriptableObject>();
-    
+
     [Header("Texts"), Space(5)]
     [SerializeField] private TMP_Text appleText;
     [SerializeField] private TMP_Text cherryText;
@@ -24,137 +24,128 @@ public class Distillery : MonoBehaviour
     [SerializeField] private TMP_Text lemonBalmText;
     [SerializeField] private TMP_Text fennelText;
     [SerializeField] private TMP_Text hyssopText;
-    
-    
+
     [Header("Buttons"), Space(5)]
     [SerializeField] private Button brandyBTN;
-    [Space(5)]
     [SerializeField] private Button whiskeyBTN;
-    [Space(5)]
     [SerializeField] private Button cognacBTN;
-    [Space(5)]
     [SerializeField] private Button grandMarnierBTN;
-    [Space(5)]
     [SerializeField] private Button absintheBTN;
-    
+
     [Header("Sound"), Space(5)]
     [SerializeField] private AudioSource _audioSource;
     [SerializeField] private AudioClip _soundEffect;
 
-    // -------------------------------------------------------------
-    
-    [Header("Brandy"), Space(5)]
-    [SerializeField] private int _appleRequired;
-    [SerializeField] private int _cherryRequired;
-    [SerializeField] private int _pearRequired;
-    [Space(5)]
-    [SerializeField] private TMP_Text _bottleOfBrandyAmount;
-    private int[] brandyIngredientsRequired;
-    
-    [Header("Wiskey"), Space(5)]
-    [SerializeField] private int _cerealsRequired;
-    [SerializeField] private int _waterRequired;
-    [SerializeField] private int _yeastRequired;
-    [Space(5)]
-    [SerializeField] private TMP_Text _bottleOfWiskeyAmount;
-    private int[] wiskeyIngredientsRequired;
-        
-    [Header("Cognac"), Space(5)]
-    [SerializeField] private int _whiteGrapesRequired;
-    [Space(5)]
-    [SerializeField] private TMP_Text _bottleOfCognacAmount;
-    private int[] cognacIngredientsRequired;
-    
-    [Header("Grand Marnier"), Space(5)]
-    [SerializeField] private int _exoticOrangeEssenceRequired;
-    [Space(5)]
-    [SerializeField] private TMP_Text _bottleOfGrandMarnierAmount;
-    private int[] GrandMarnierIngredientsRequired;
-    
-    [Header("Absinthe"), Space(5)]
-    [SerializeField] private int _lemonBalmRequired;
-    [SerializeField] private int _fennelRequired;
-    [SerializeField] private int _hyssopRequired;
-    [Space(5)]
-    [SerializeField] private TMP_Text _bottleOfAbsintheAmount;
-    private int[] absintheIngredientsRequired;
-    
+    [Header("Alcohol Requirements"), Space(5)]
+    [SerializeField] private AlcoholRequirements[] alcoholRequirements;
+
     void Start()
     {
-        brandyIngredientsRequired = new int[] {_appleRequired, _cherryRequired, _pearRequired};
-        wiskeyIngredientsRequired = new int[] {_cerealsRequired, _waterRequired, _yeastRequired};
-        cognacIngredientsRequired = new int[] {_whiteGrapesRequired};
-        GrandMarnierIngredientsRequired = new int[] {_exoticOrangeEssenceRequired};
-        absintheIngredientsRequired = new int[] {_lemonBalmRequired, _fennelRequired, _hyssopRequired};
-        
-        UpdateBrandyUI();
+        foreach (var alcohol in alcoholRequirements)
+        {
+            alcohol.InitializeUI();
+        }
     }
 
     void Update()
     {
-        CheckPreparationForBrandy();
+        foreach (var alcohol in alcoholRequirements)
+        {
+            alcohol.CheckPreparation();
+        }
     }
-    
-    void CheckPreparationForBrandy()
+
+    public void PrepareAlcohol(string alcoholName)
     {
-        // Déclarez un tableau des quantités disponibles dans l'inventaire pour chaque ressource correspondante
-        int[] availableAmounts = { Inventory.Instance.appleAmount, Inventory.Instance.cherryAmount, Inventory.Instance.pearAmount };
+        var alcohol = alcoholRequirements.FirstOrDefault(a => a.alcoholName == alcoholName);
+        if (alcohol != null)
+        {
+            alcohol.Prepare(_audioSource, _soundEffect);
+        }
+    }
+}
 
-        // Utilisez la méthode Zip pour combiner les deux tableaux en paires (requises et disponibles), puis vérifiez pour chaque paire que la quantité disponible est supérieure ou égale à la quantité requise.
-        bool allResourcesSufficient = brandyIngredientsRequired
-            .Zip(availableAmounts, (required, available) => available >= required)  // Vérifie si chaque ressource est suffisante
-            .All(x => x);  // Si toutes les ressources sont suffisantes (tous les résultats de "Zip" sont true), alors "allResourcesSufficient" sera true
+[System.Serializable]
+public class AlcoholRequirements
+{
+    public string alcoholName;
+    public TMP_Text[] ingredientTexts;
+    public string[] ingredientNames;
+    public int[] requiredAmounts;
+    public TMP_Text bottleAmountText;
+    public Button prepareButton;
 
-         // Résultat : "allResourcesSufficient" sera true si toutes les ressources sont suffisantes, sinon false.    
+    public void InitializeUI()
+    {
+        UpdateUI();
+    }
 
+    public void CheckPreparation()
+    {
+        bool allResourcesSufficient = requiredAmounts
+            .Select((required, index) => Inventory.Instance.GetIngredientQuantity(ingredientNames[index]) >= required)
+            .All(x => x);
+
+        prepareButton.interactable = allResourcesSufficient;
+        UpdateUI();
+    }
+
+    public void Prepare(AudioSource audioSource, AudioClip soundEffect)
+    {
+        bool allResourcesSufficient = requiredAmounts
+            .Select((required, index) => Inventory.Instance.GetIngredientQuantity(ingredientNames[index]) >= required)
+            .All(x => x);
 
         if (allResourcesSufficient)
         {
-            brandyBTN.interactable = true;
-        }
-        else
-        {
-            brandyBTN.interactable = false;
-        }
+            for (int i = 0; i < requiredAmounts.Length; i++)
+            {
+                Inventory.Instance.IncrementIngredient(ingredientNames[i]);
+                Inventory.Instance.DecrementIngredient(ingredientNames[i], requiredAmounts[i]);
+            }
 
-        UpdateBrandyUI();
+            switch (alcoholName)
+            {
+                case "brandy":
+                    Inventory.Instance.brandyAmount++;
+                    break;
+                case "wiskey":
+                    Inventory.Instance.wiskeyAmount++;
+                    break;
+                case "cognac":
+                    Inventory.Instance.cognacAmount++;
+                    break;
+                case "grandMarnier":
+                    Inventory.Instance.grandMarnierAmount++;
+                    break;
+                case "absinthe":
+                    Inventory.Instance.absintheAmount++;
+                    break;
+            }
+
+            int alcoholQuantity = alcoholName switch
+            {
+                "brandy" => Inventory.Instance.brandyAmount,
+                "wiskey" => Inventory.Instance.wiskeyAmount,
+                "cognac" => Inventory.Instance.cognacAmount,
+                "grandMarnier" => Inventory.Instance.grandMarnierAmount,
+                "absinthe" => Inventory.Instance.absintheAmount,
+                _ => 0 // Si un nom d'alcool non reconnu est fourni, la valeur par défaut est 0
+            };
+            bottleAmountText.text = $"Quantity Owned: {alcoholQuantity}";
+
+            audioSource.PlayOneShot(soundEffect);
+        }
     }
 
-    public void PrepareBrandy()
+    private void UpdateUI()
     {
-        int[] requiredAmounts = {_appleRequired, _cherryRequired, _pearRequired};
-        int[] availableAmounts = { Inventory.Instance.appleAmount, Inventory.Instance.cherryAmount, Inventory.Instance.pearAmount };
-        bool allResourcesSufficient = requiredAmounts.Zip(availableAmounts, (required, available) => available >= required).All(x => x);
-
-        if (allResourcesSufficient)
+        for (int i = 0; i < ingredientTexts.Length; i++)
         {
-            Inventory.Instance.appleAmount -= _appleRequired;
-            Inventory.Instance.cherryAmount -= _cherryRequired;
-            Inventory.Instance.pearAmount -= _pearRequired;
-            
-            Inventory.Instance.brandyAmount ++;
-            
-            _bottleOfBrandyAmount.text = "Quantity Owned : " + Inventory.Instance.brandyAmount.ToString();
-            
-            _audioSource.PlayOneShot(_soundEffect);
-        }
-    }
-
-    private void UpdateBrandyUI()
-    {
-        if (appleText != null)
-        {
-            appleText.text = Inventory.Instance.appleAmount.ToString() + " / " + _appleRequired.ToString();
-        }
-        
-        if (cherryText != null)
-        {
-            cherryText.text = Inventory.Instance.cherryAmount.ToString() + " / " + _cherryRequired.ToString();
-        }
-        
-        if (pearText != null)
-        {
-            pearText.text = Inventory.Instance.pearAmount.ToString() + " / " + _pearRequired.ToString();
+            if (ingredientTexts[i] != null)
+            {
+                ingredientTexts[i].text = $"{Inventory.Instance.GetIngredientQuantity(ingredientNames[i])} / {requiredAmounts[i]}";
+            }
         }
     }
 }

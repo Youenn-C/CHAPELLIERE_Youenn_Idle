@@ -113,4 +113,48 @@ public class Inventory : MonoBehaviour
                 break;
         }
     }
+    
+    public void DecrementIngredient(string ingredientName, int amount)
+    {
+        switch (ingredientName)
+        {
+            case "apple":
+                appleAmount -= amount;
+                break;
+            case "cherry":
+                cherryAmount -= amount;
+                break;
+            case "pear":
+                pearAmount -= amount;
+                break;
+            case "cereals":
+                cerealsAmount -= amount;
+                break;
+            case "water":
+                waterAmount -= amount;
+                break;
+            case "yeast":
+                yeastAmount -= amount;
+                break;
+            case "whiteGrapes":
+                whiteGrapesAmount -= amount;
+                break;
+            case "exoticOrangeEssence":
+                exoticOrangeEssenceAmount -= amount;
+                break;
+            case "fennel":
+                fennelAmount -= amount;
+                break;
+            case "lemonBalm":
+                lemonBalmAmount -= amount;
+                break;
+            case "hyssop":
+                hyssopAmount -= amount;
+                break;
+            default:
+                Debug.LogWarning("Ingrédient inconnu: " + ingredientName);
+                break;
+        }
+    }
+
 }
