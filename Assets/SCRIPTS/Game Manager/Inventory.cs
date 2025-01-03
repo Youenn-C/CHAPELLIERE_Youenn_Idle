@@ -22,10 +22,19 @@ public class Inventory : MonoBehaviour
 
     [Header("Alcohol"), Space(5)]
     public int brandyAmount;
+    public int _brandyBottlePrice;
+    [Space(5)]
     public int wiskeyAmount;
+    public int _wiskeyBottlePrice;
+    [Space(5)]
     public int cognacAmount;
+    public int _cognacBottlePrice;
+    [Space(5)]
     public int grandMarnierAmount;
+    public int _grandMarnierBottlePrice;
+    [Space(5)]
     public int absintheAmount;
+    public int _absintheBottlePrice;
     
     private void Awake()
     {

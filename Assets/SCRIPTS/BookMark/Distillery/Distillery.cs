@@ -5,26 +5,6 @@ using System.Linq;
 
 public class Distillery : MonoBehaviour
 {
-    [Header("Recipe"), Space(5)]
-    public MyDictionary<string, ScriptableObject> allAlcoholRecipe = new MyDictionary<string, ScriptableObject>();
-
-    [Header("Texts"), Space(5)]
-    [SerializeField] private TMP_Text appleText;
-    [SerializeField] private TMP_Text cherryText;
-    [SerializeField] private TMP_Text pearText;
-    [Space(5)]
-    [SerializeField] private TMP_Text cerealsText;
-    [SerializeField] private TMP_Text waterText;
-    [SerializeField] private TMP_Text yeastText;
-    [Space(5)]
-    [SerializeField] private TMP_Text whiteGrapesText;
-    [Space(5)]
-    [SerializeField] private TMP_Text exoticOrangesText;
-    [Space(5)]
-    [SerializeField] private TMP_Text lemonBalmText;
-    [SerializeField] private TMP_Text fennelText;
-    [SerializeField] private TMP_Text hyssopText;
-
     [Header("Buttons"), Space(5)]
     [SerializeField] private Button brandyBTN;
     [SerializeField] private Button whiskeyBTN;
@@ -77,7 +57,8 @@ public class AlcoholRequirements
 
     public void InitializeUI()
     {
-        UpdateUI();
+        DistilleryUpdateUI();
+        UpdateBottleQuantityUI(); // Mise à jour initiale de la quantité de bouteilles
     }
 
     public void CheckPreparation()
@@ -87,7 +68,9 @@ public class AlcoholRequirements
             .All(x => x);
 
         prepareButton.interactable = allResourcesSufficient;
-        UpdateUI();
+
+        DistilleryUpdateUI();
+        UpdateBottleQuantityUI(); // Mise à jour continue de la quantité de bouteilles
     }
 
     public void Prepare(AudioSource audioSource, AudioClip soundEffect)
@@ -100,10 +83,13 @@ public class AlcoholRequirements
         {
             for (int i = 0; i < requiredAmounts.Length; i++)
             {
-                Inventory.Instance.IncrementIngredient(ingredientNames[i]);
-                Inventory.Instance.DecrementIngredient(ingredientNames[i], requiredAmounts[i]);
+                int currentQuantity = Inventory.Instance.GetIngredientQuantity(ingredientNames[i]);
+                int requiredQuantity = requiredAmounts[i];
+
+                Inventory.Instance.DecrementIngredient(ingredientNames[i], requiredQuantity);
             }
 
+            // Mise à jour des quantités d'alcool
             switch (alcoholName)
             {
                 case "brandy":
@@ -123,29 +109,39 @@ public class AlcoholRequirements
                     break;
             }
 
-            int alcoholQuantity = alcoholName switch
-            {
-                "brandy" => Inventory.Instance.brandyAmount,
-                "wiskey" => Inventory.Instance.wiskeyAmount,
-                "cognac" => Inventory.Instance.cognacAmount,
-                "grandMarnier" => Inventory.Instance.grandMarnierAmount,
-                "absinthe" => Inventory.Instance.absintheAmount,
-                _ => 0 // Si un nom d'alcool non reconnu est fourni, la valeur par défaut est 0
-            };
-            bottleAmountText.text = $"Quantity Owned: {alcoholQuantity}";
-
             audioSource.PlayOneShot(soundEffect);
+
+            // Mise à jour après préparation
+            UpdateBottleQuantityUI();
         }
     }
 
-    private void UpdateUI()
+    private void DistilleryUpdateUI()
     {
-        for (int i = 0; i < ingredientTexts.Length; i++)
+        for (int i = 0; i < requiredAmounts.Length; i++)
         {
             if (ingredientTexts[i] != null)
             {
                 ingredientTexts[i].text = $"{Inventory.Instance.GetIngredientQuantity(ingredientNames[i])} / {requiredAmounts[i]}";
             }
+        }
+    }
+
+    private void UpdateBottleQuantityUI()
+    {
+        int alcoholQuantity = alcoholName switch
+        {
+            "brandy" => Inventory.Instance.brandyAmount,
+            "wiskey" => Inventory.Instance.wiskeyAmount,
+            "cognac" => Inventory.Instance.cognacAmount,
+            "grandMarnier" => Inventory.Instance.grandMarnierAmount,
+            "absinthe" => Inventory.Instance.absintheAmount,
+            _ => 0
+        };
+
+        if (bottleAmountText != null)
+        {
+            bottleAmountText.text = $"Owned : {alcoholQuantity}";
         }
     }
 }

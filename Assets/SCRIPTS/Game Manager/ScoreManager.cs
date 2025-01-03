@@ -7,8 +7,8 @@ using TMPro; // Assurez-vous d'importer le namespace TMP
 public class ScoreManager : MonoBehaviour
 {
     [Header("Score"), Space(5)]
-    [SerializeField] private int score;
-    [SerializeField] private TMP_Text scoreText;
+    public int score;
+    [SerializeField] private TMP_Text _scoreText;
 
     private void Start()
     {
@@ -23,9 +23,9 @@ public class ScoreManager : MonoBehaviour
 
     private void UpdateScoreUI()
     {
-        if (scoreText != null)
+        if (_scoreText != null)
         {
-            scoreText.text = "Score : " + score.ToString();
+            _scoreText.text = "Score : " + score.ToString();
         }
     }
 

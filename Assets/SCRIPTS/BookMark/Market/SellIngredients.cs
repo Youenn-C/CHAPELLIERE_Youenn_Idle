@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
@@ -23,6 +24,11 @@ public class SellIngredients : MonoBehaviour
         UpdateQuantityText();  // Met à jour la quantité affichée
     }
 
+    private void Update()
+    {
+        UpdateQuantityText();
+    }
+
     public void Buy()
     {
         // Vérifie si le joueur a suffisamment de richesse
@@ -36,7 +42,7 @@ public class SellIngredients : MonoBehaviour
             
             GameManager.Instance.drakeManager.UpdateDrakeUI();
 
-            GameManager.Instance.priceMultiplier *= 1.02f;
+            //GameManager.Instance.priceMultiplier += Mathf.FloorToInt(GameManager.Instance.scoreManager.score * 0.1f);
 
             // Met à jour l'affichage de la quantité de l'ingrédient
             UpdateQuantityText();
@@ -47,8 +53,8 @@ public class SellIngredients : MonoBehaviour
 
     private void UpdatePriceText()
     {
+        _price += Mathf.FloorToInt(GameManager.Instance.scoreManager.score * 0.1f);
         _priceText.text = "Price : " + _price.ToString();
-        _price = Mathf.RoundToInt(_price * GameManager.Instance.priceMultiplier);
     }
     
     private void UpdateQuantityText()

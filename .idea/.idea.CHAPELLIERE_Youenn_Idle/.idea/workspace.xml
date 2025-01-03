@@ -6,38 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="15f19071-a9e0-4109-87ac-8f9314201cc8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CHAPELLIERE_Youenn_Idle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CHAPELLIERE_Youenn_Idle/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/FeedBack.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/FeedBack.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/FeedBack_Animation.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/FeedBack_Animation.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/alice_in_wonderland/Alice_in_Wonderland_3 SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/alice_in_wonderland/Alice_in_Wonderland_3 SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/BookMark/Distillery/Distillery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/BookMark/Distillery/Distillery.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/BookMark/Market/SellIngredients.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/BookMark/Market/SellIngredients.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/BookMark/Upgrade/Tavernier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/BookMark/Upgrade/Tavernier.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/BookMark/Upgrade/Upgrade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/BookMark/Upgrade/Upgrade.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Game Manager/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Game Manager/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Game Manager/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Game Manager/Inventory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Alcohol.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Alcohol.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/AlcoholRecipe.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/AlcoholRecipe.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Alcohol.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Apple.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Apple.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Cereals.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Cereals.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Cherry.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Cherry.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Fennel.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Fennel.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Hyssop.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Hyssop.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Lemon_Balm.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Lemon_Balm.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Oranges.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Oranges.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Pear.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Pear.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Water.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Water.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_White_Grapes.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_White_Grapes.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Yeast.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Ingredients/IN_Yeast.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Recipe.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Recipe/AR_Brandy.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Objects/Recipe/AR_Brandy.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Game Manager/ScoreManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Game Manager/ScoreManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,13 +33,14 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../Astuces_Cliker/Scripts/Intro_UI/AttackButton.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/SCRIPTS/Scriptable Objects/Alcohol.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Astuces_Cliker/Scripts/Intro_UI/TimerManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/SCRIPTS/Tables/TimerManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "00000000",
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;00000000&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2pM8zCdbYxUyVB1C0rQ2wm38oXE" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -159,6 +140,7 @@
       <workItem from="1735395925663" duration="1911000" />
       <workItem from="1735835791453" duration="317000" />
       <workItem from="1735836234437" duration="3548000" />
+      <workItem from="1735894946172" duration="17570000" />
     </task>
     <servers />
   </component>

@@ -14,7 +14,9 @@ public class Tavernier : MonoBehaviour
     [SerializeField] private int tavernierLevel;
     [SerializeField] private int tavernierMaxLevel = 20;
     [SerializeField] private int multiplyingFactor = 1;
+    [SerializeField] private int _tavernierUpgradePrice;
     [SerializeField] private TMP_Text _levelText;
+    [SerializeField] private TMP_Text _tavernierUpgradePriceText;
     
     // Start is called before the first frame update
     void Start()
@@ -23,15 +25,39 @@ public class Tavernier : MonoBehaviour
         _levelUpButton.SetActive(false);
         tavernierLevel = 0;
         _levelText.text = "Inactif";
+        
+        _tavernierUpgradePriceText.text = _tavernierUpgradePrice.ToString();
+        if (Inventory.Instance.richness < _tavernierUpgradePrice) _tavernierButton.interactable = false;
+    }
+    
+    void Update()
+    {
+        if (Inventory.Instance.richness >= _tavernierUpgradePrice) _tavernierButton.interactable = true;
+        else
+        {
+            _tavernierButton.interactable = false;
+        }
     }
 
     public void UpgradeTavernier()
     {
         if (tavernierLevel < tavernierMaxLevel)
         {
-            tavernierLevel++;
-            multiplyingFactor = Mathf.Abs(multiplyingFactor *= 2);
-            _levelText.text = "Lvl : " + tavernierLevel.ToString();
+            if (Inventory.Instance.richness >= _tavernierUpgradePrice)
+            {
+                Inventory.Instance.richness -= _tavernierUpgradePrice;
+                _tavernierUpgradePrice *= 2;
+                _tavernierUpgradePriceText.text = _tavernierUpgradePrice.ToString();
+                
+                tavernierLevel++;
+                multiplyingFactor = Mathf.Abs(multiplyingFactor *= 2);
+                _levelText.text = "Lvl : " + tavernierLevel.ToString();
+            }
+            
+            if (Inventory.Instance.richness < _tavernierUpgradePrice)
+            {
+                _tavernierButton.interactable = false;
+            }
 
             if (tavernierLevel == 1)
             {
@@ -43,8 +69,9 @@ public class Tavernier : MonoBehaviour
                 StartCoroutine(WorkTavernier());
             }
             
-            if (tavernierLevel >= tavernierMaxLevel)
+            if (tavernierLevel == tavernierMaxLevel)
             {
+                _levelText.text = "Lvl MAX";
                 _tavernierButton.interactable = false;
             }
         }
