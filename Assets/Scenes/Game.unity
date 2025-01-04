@@ -427,7 +427,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 258.5, y: 12.448}
+  m_AnchoredPosition: {x: 260, y: 12}
   m_SizeDelta: {x: 130.1151, y: 24.896}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6292000
@@ -494,8 +494,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38d59480d4724f746afb6fdb9f83acef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxTime: 5
+  maxTime: 10
   filledImage: {fileID: 6292001}
+  rewardAmount: 0
+  moveDirection: {x: 0, y: 50}
 --- !u!1 &15969313
 GameObject:
   m_ObjectHideFlags: 0
@@ -1009,7 +1011,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -253.20004, y: 28.449997}
+  m_AnchoredPosition: {x: -255, y: 30}
   m_SizeDelta: {x: 130.1151, y: 24.896}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &75470434
@@ -1076,8 +1078,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38d59480d4724f746afb6fdb9f83acef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxTime: 5
+  maxTime: 10
   filledImage: {fileID: 75470435}
+  rewardAmount: 0
+  moveDirection: {x: 0, y: 50}
 --- !u!1 &106089094
 GameObject:
   m_ObjectHideFlags: 0
@@ -1910,7 +1914,7 @@ GameObject:
   - component: {fileID: 167173775}
   - component: {fileID: 167173779}
   - component: {fileID: 167173778}
-  - component: {fileID: 167173777}
+  - component: {fileID: 167173780}
   - component: {fileID: 167173776}
   m_Layer: 5
   m_Name: Barrel 4
@@ -1952,22 +1956,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amplitude: 10
   originalY: 0
---- !u!114 &167173777
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 167173774}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 826219e7882e82b41b3518f22459ab4c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  alcoholName: grandMarnier
-  maxTime: 5
-  filledImage: {fileID: 167173778}
-  bottleCountText: {fileID: 0}
 --- !u!114 &167173778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2006,6 +1994,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 167173774}
   m_CullTransparentMesh: 1
+--- !u!114 &167173780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167173774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 826219e7882e82b41b3518f22459ab4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alcoholName: grandMarnier
+  maxTime: 5
+  filledImage: {fileID: 167173778}
+  bottleCountText: {fileID: 0}
+  rewardAmount: 0
+  moveDirection: {x: 0, y: 50}
 --- !u!1 &178702386
 GameObject:
   m_ObjectHideFlags: 0
@@ -5766,7 +5772,7 @@ MonoBehaviour:
   brandyBTN: {fileID: 306020283}
   whiskeyBTN: {fileID: 1587463526}
   cognacBTN: {fileID: 1692282109}
-  grandMarnierBTN: {fileID: 1528358326}
+  grandMarnierBTN: {fileID: 0}
   absintheBTN: {fileID: 692748854}
   _audioSource: {fileID: 2134315880}
   _soundEffect: {fileID: 8300000, guid: b9a52fbac498ff14eadc107d0d268f1c, type: 3}
@@ -7703,7 +7709,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -51.7, y: -57.3}
+  m_AnchoredPosition: {x: -50, y: -50}
   m_SizeDelta: {x: 130.1151, y: 24.896}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &550046453
@@ -7770,8 +7776,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38d59480d4724f746afb6fdb9f83acef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxTime: 5
+  maxTime: 10
   filledImage: {fileID: 550046454}
+  rewardAmount: 0
+  moveDirection: {x: 0, y: 50}
 --- !u!1 &555849563
 GameObject:
   m_ObjectHideFlags: 0
@@ -11311,7 +11319,7 @@ GameObject:
   - component: {fileID: 836700649}
   - component: {fileID: 836700648}
   m_Layer: 5
-  m_Name: Button - Open Settings
+  m_Name: Button - Toggle Settings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11384,7 +11392,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1384314323}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: OpenSettingsWindow
+        m_MethodName: ToggleSettingsWindow
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15149,6 +15157,8 @@ MonoBehaviour:
   maxTime: 5
   filledImage: {fileID: 1169725463}
   bottleCountText: {fileID: 0}
+  rewardAmount: 0
+  moveDirection: {x: 0, y: 50}
 --- !u!114 &1169725463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15667,7 +15677,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1217386305}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -15680,6 +15690,7 @@ Transform:
   - {fileID: 454118677}
   - {fileID: 1788133353}
   - {fileID: 1773711195}
+  - {fileID: 1449590689}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1217732922
@@ -18256,6 +18267,8 @@ MonoBehaviour:
   maxTime: 5
   filledImage: {fileID: 1341301672}
   bottleCountText: {fileID: 0}
+  rewardAmount: 0
+  moveDirection: {x: 0, y: 50}
 --- !u!114 &1341301672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18703,6 +18716,7 @@ GameObject:
   - component: {fileID: 1384314322}
   - component: {fileID: 1384314324}
   - component: {fileID: 1384314327}
+  - component: {fileID: 1384314328}
   - component: {fileID: 1384314325}
   m_Layer: 0
   m_Name: Game_Manager
@@ -18719,7 +18733,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1384314320}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -18755,6 +18769,7 @@ MonoBehaviour:
   drakeManager: {fileID: 1384314324}
   scoreManager: {fileID: 1384314322}
   upgrade: {fileID: 1384314327}
+  feedbackManager: {fileID: 1384314328}
   _settingsWindow: {fileID: 1269579726}
   _soundEffect: {fileID: 8300000, guid: 4a23fd329f0206c4494c00d0512a3050, type: 3}
   _audioSource: {fileID: 2134315880}
@@ -18792,7 +18807,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4989667199f920f43b9b6cff15381d1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  richness: 0
+  richness: 100000
   appleAmount: 0
   cherryAmount: 0
   pearAmount: 0
@@ -18804,15 +18819,15 @@ MonoBehaviour:
   fennelAmount: 0
   lemonBalmAmount: 0
   hyssopAmount: 0
-  brandyAmount: 0
+  brandyAmount: 5
   _brandyBottlePrice: 50
-  wiskeyAmount: 0
+  wiskeyAmount: 5
   _wiskeyBottlePrice: 50
-  cognacAmount: 0
+  cognacAmount: 5
   _cognacBottlePrice: 50
-  grandMarnierAmount: 0
+  grandMarnierAmount: 5
   _grandMarnierBottlePrice: 50
-  absintheAmount: 0
+  absintheAmount: 5
   _absintheBottlePrice: 50
 --- !u!114 &1384314327
 MonoBehaviour:
@@ -18846,6 +18861,19 @@ MonoBehaviour:
   _strenghtCurrentLevelText: {fileID: 1827818995}
   _strenghtUpgradePriceText: {fileID: 1820957328}
   _strenghtUpgradeButton: {fileID: 1102388552}
+--- !u!114 &1384314328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384314320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b700b8a994d447b8195d8e77ab9a07c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  feedbackPrefab: {fileID: 8479824421900084592, guid: 97471213606157d4ea771c535360cd9c, type: 3}
 --- !u!1 &1389898123
 GameObject:
   m_ObjectHideFlags: 0
@@ -19611,11 +19639,11 @@ Transform:
   m_GameObject: {fileID: 1449590688}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1217386306}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1449598995
 GameObject:
@@ -22497,6 +22525,8 @@ MonoBehaviour:
   maxTime: 5
   filledImage: {fileID: 1630324980}
   bottleCountText: {fileID: 0}
+  rewardAmount: 0
+  moveDirection: {x: 0, y: 50}
 --- !u!114 &1630324980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26858,6 +26888,8 @@ MonoBehaviour:
   maxTime: 5
   filledImage: {fileID: 1906273271}
   bottleCountText: {fileID: 0}
+  rewardAmount: 0
+  moveDirection: {x: 0, y: 50}
 --- !u!114 &1906273271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27022,7 +27054,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7.5, y: 50.4}
+  m_AnchoredPosition: {x: 8, y: 50}
   m_SizeDelta: {x: 130.1151, y: 24.896}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1926313972
@@ -27089,8 +27121,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38d59480d4724f746afb6fdb9f83acef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxTime: 5
+  maxTime: 10
   filledImage: {fileID: 1926313973}
+  rewardAmount: 0
+  moveDirection: {x: 0, y: 50}
 --- !u!1 &1926706554
 GameObject:
   m_ObjectHideFlags: 0
@@ -29804,6 +29838,5 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1217386306}
-  - {fileID: 1449590689}
   - {fileID: 1833301446}
   - {fileID: 178702387}

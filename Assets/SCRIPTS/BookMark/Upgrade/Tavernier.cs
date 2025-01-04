@@ -51,7 +51,7 @@ public class Tavernier : MonoBehaviour
                 
                 tavernierLevel++;
                 multiplyingFactor = Mathf.Abs(multiplyingFactor *= 2);
-                _levelText.text = "Lvl : " + tavernierLevel.ToString();
+                _levelText.text = "Level : " + tavernierLevel.ToString();
             }
             
             if (Inventory.Instance.richness < _tavernierUpgradePrice)
@@ -63,7 +63,7 @@ public class Tavernier : MonoBehaviour
             {
                 tavernierLevel = 1;
                 multiplyingFactor = Mathf.Abs(multiplyingFactor *= 2);
-                _levelText.text = "Lvl : " + tavernierLevel.ToString();
+                _levelText.text = "Level : " + tavernierLevel.ToString();
                 _empoyTextButton.SetActive(false);
                 _levelUpButton.SetActive(true);
                 StartCoroutine(WorkTavernier());
@@ -71,7 +71,7 @@ public class Tavernier : MonoBehaviour
             
             if (tavernierLevel == tavernierMaxLevel)
             {
-                _levelText.text = "Lvl MAX";
+                _levelText.text = "Level MAX";
                 _tavernierButton.interactable = false;
             }
         }

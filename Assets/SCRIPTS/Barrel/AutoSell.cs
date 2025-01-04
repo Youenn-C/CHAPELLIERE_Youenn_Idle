@@ -11,12 +11,19 @@ public class AutoSell : MonoBehaviour
     [Header("UI")]
     [SerializeField] private Image filledImage; // Image avec remplissage
     [SerializeField] private TMP_Text bottleCountText; // Texte affichant la quantité de bouteilles
+    
+    [Header("FeedBack Data"), Space(5)]
+    [SerializeField] private int rewardAmount;
+    private Vector2 startPosition;
+    [SerializeField] private Vector2 moveDirection;
 
     private float currentTime = 0f; // Temps actuel
     private bool isAutoSellActive = true; // Indique si la vente automatique est active
 
     private void Start()
     {
+        startPosition = transform.position;
+        
         SetFullFilledImage(); // Initialise l'image comme pleine
         UpdateBottleCount(); // Met à jour l'affichage de la quantité
     }
@@ -78,6 +85,8 @@ public class AutoSell : MonoBehaviour
         {
             int bottlePrice = 0;
 
+            Debug.Log(Inventory.Instance.grandMarnierAmount);
+
             // Vérifie si l'alcool spécifié existe dans l'inventaire
             switch (alcoholName.ToLower())
             {
@@ -88,7 +97,7 @@ public class AutoSell : MonoBehaviour
                         bottlePrice = Inventory.Instance._brandyBottlePrice;
                     }
                     break;
-                case "whiskey":
+                case "wiskey":
                     if (Inventory.Instance.wiskeyAmount > 0)
                     {
                         Inventory.Instance.wiskeyAmount--;
@@ -102,11 +111,12 @@ public class AutoSell : MonoBehaviour
                         bottlePrice = Inventory.Instance._cognacBottlePrice;
                     }
                     break;
-                case "grandmarnier":
-                    if (Inventory.Instance.grandMarnierAmount > 0)
+                case "grandMarnier":
+                    
+                    if (Inventory.Instance.cognacAmount > 0)
                     {
-                        Inventory.Instance.grandMarnierAmount--;
-                        bottlePrice = Inventory.Instance._grandMarnierBottlePrice;
+                        Inventory.Instance.cognacAmount++;
+                        bottlePrice = Inventory.Instance._cognacBottlePrice;
                     }
                     break;
                 case "absinthe":
@@ -125,6 +135,9 @@ public class AutoSell : MonoBehaviour
             if (bottlePrice > 0)
             {
                 GameManager.Instance.drakeManager.AddDrake(bottlePrice);
+                rewardAmount = bottlePrice;
+                // Appeler le FeedbackManager pour déclencher un feedback, en passant le GameObject actuel
+                GameManager.Instance.feedbackManager.TriggerFeedback(startPosition, moveDirection, rewardAmount, gameObject);
             }
         }
     }

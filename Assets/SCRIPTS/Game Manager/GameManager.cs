@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public DrakeManager drakeManager;
     public ScoreManager scoreManager;
     public Upgrade upgrade;
+    public FeedbackManager feedbackManager;
 
     [Header("Settings"), Space(5)]
     [SerializeField] private GameObject _settingsWindow;
@@ -81,14 +82,9 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void OpenSettingsWindow()
+    public void ToggleSettingsWindow()
     {
-        _settingsWindow.SetActive(true);
-    }
-
-    public void CloseSettingsWindow()
-    {
-        _settingsWindow.SetActive(false);
+        _settingsWindow.SetActive(!_settingsWindow.activeSelf);
     }
 
     public void QuitGame()

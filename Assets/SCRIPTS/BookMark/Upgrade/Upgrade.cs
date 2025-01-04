@@ -78,7 +78,7 @@ public class Upgrade : MonoBehaviour
                 GameManager.Instance.drakeManager.UpdateDrakeUI();
                 
                 _tablesCurrentLevel++;
-                _tablesCurrentLevelText.text = "Lvl : " + _tablesCurrentLevel.ToString();
+                _tablesCurrentLevelText.text = "Level : " + _tablesCurrentLevel.ToString();
             }
             
             if (Inventory.Instance.richness < _tablesUpgradePrice)
@@ -88,7 +88,7 @@ public class Upgrade : MonoBehaviour
             
             if (_tablesCurrentLevel >= _tablesMaxLevel)
             {
-                _tablesCurrentLevelText.text = "Lvl MAX";
+                _tablesCurrentLevelText.text = "Level MAX";
                 _tablesUpgradeButton.interactable = false;
             }
         }
@@ -106,7 +106,7 @@ public class Upgrade : MonoBehaviour
                 GameManager.Instance.drakeManager.UpdateDrakeUI();
                 
                 _barrelCurrentLevel++;
-                _barrelCurrentLevelText.text = "Lvl : " + _barrelCurrentLevel.ToString();
+                _barrelCurrentLevelText.text = "Level : " + _barrelCurrentLevel.ToString();
             }
             
             if (Inventory.Instance.richness < _barrelUpgradePrice)
@@ -116,7 +116,7 @@ public class Upgrade : MonoBehaviour
 
             if (_barrelCurrentLevel >= _barrelsMaxLevel)
             {
-                _barrelCurrentLevelText.text = "Lvl MAX";
+                _barrelCurrentLevelText.text = "Level MAX";
                 _barrelsUpgradeButton.interactable = false;
             }
         }
@@ -135,7 +135,7 @@ public class Upgrade : MonoBehaviour
                 
                 _strenghtCurrentLevel ++; 
                 _strength = Mathf.Abs(_strength * 2);
-                _strenghtCurrentLevelText.text = "Lvl : " + _strenghtCurrentLevel.ToString();
+                _strenghtCurrentLevelText.text = "Level : " + _strenghtCurrentLevel.ToString();
             }
             
             if (Inventory.Instance.richness < _strenghtUpgradePrice)
@@ -145,7 +145,7 @@ public class Upgrade : MonoBehaviour
 
             if (_strenghtCurrentLevel >= _strenghtMaxLevel)
             {
-                _strenghtCurrentLevelText.text = "Lvl MAX";
+                _strenghtCurrentLevelText.text = "Level MAX";
                 _strenghtUpgradeButton.interactable = false;
             }
         }
