@@ -10,7 +10,7 @@ public class AutoSell : MonoBehaviour
 
     [Header("UI")]
     [SerializeField] private Image filledImage; // Image avec remplissage
-    [SerializeField] private TMP_Text bottleCountText; // Texte affichant la quantité de bouteilles
+    private TMP_Text bottleCountText; // Texte affichant la quantité de bouteilles
     
     [Header("FeedBack Data"), Space(5)]
     [SerializeField] private int rewardAmount;
@@ -80,67 +80,65 @@ public class AutoSell : MonoBehaviour
     }
 
     private void SellAlcohol()
+{
+    if (Inventory.Instance != null && GameManager.Instance != null)
     {
-        if (Inventory.Instance != null && GameManager.Instance != null)
+        int bottlePrice = 0;
+
+        // Vérifie si l'alcool spécifié existe dans l'inventaire
+        switch (alcoholName.ToLower()) // Conversion en minuscules pour la comparaison
         {
-            int bottlePrice = 0;
+            case "brandy":
+                if (Inventory.Instance.brandyAmount > 0)
+                {
+                    Inventory.Instance.brandyAmount--;
+                    bottlePrice = Inventory.Instance._brandyBottlePrice;
+                }
+                break;
+            case "wiskey":
+                if (Inventory.Instance.wiskeyAmount > 0)
+                {
+                    Inventory.Instance.wiskeyAmount--;
+                    bottlePrice = Inventory.Instance._wiskeyBottlePrice;
+                }
+                break;
+            case "cognac":
+                if (Inventory.Instance.cognacAmount > 0)
+                {
+                    Inventory.Instance.cognacAmount--;
+                    bottlePrice = Inventory.Instance._cognacBottlePrice;
+                }
+                break;
+            case "grandmarnier":  // Utilisation de la version en minuscules
+                if (Inventory.Instance.grandMarnierAmount > 0)
+                {
+                    Inventory.Instance.grandMarnierAmount--;
+                    bottlePrice = Inventory.Instance._grandMarnierBottlePrice;
+                }
+                break;
+            case "absinthe":
+                if (Inventory.Instance.absintheAmount > 0)
+                {
+                    Inventory.Instance.absintheAmount--;
+                    bottlePrice = Inventory.Instance._absintheBottlePrice;
+                }
+                break;
+            default:
+                Debug.LogWarning($"Unknown alcohol: {alcoholName}");
+                break;
+        }
 
-            Debug.Log(Inventory.Instance.grandMarnierAmount);
-
-            // Vérifie si l'alcool spécifié existe dans l'inventaire
-            switch (alcoholName.ToLower())
-            {
-                case "brandy":
-                    if (Inventory.Instance.brandyAmount > 0)
-                    {
-                        Inventory.Instance.brandyAmount--;
-                        bottlePrice = Inventory.Instance._brandyBottlePrice;
-                    }
-                    break;
-                case "wiskey":
-                    if (Inventory.Instance.wiskeyAmount > 0)
-                    {
-                        Inventory.Instance.wiskeyAmount--;
-                        bottlePrice = Inventory.Instance._wiskeyBottlePrice;
-                    }
-                    break;
-                case "cognac":
-                    if (Inventory.Instance.cognacAmount > 0)
-                    {
-                        Inventory.Instance.cognacAmount--;
-                        bottlePrice = Inventory.Instance._cognacBottlePrice;
-                    }
-                    break;
-                case "grandMarnier":
-                    
-                    if (Inventory.Instance.cognacAmount > 0)
-                    {
-                        Inventory.Instance.cognacAmount++;
-                        bottlePrice = Inventory.Instance._cognacBottlePrice;
-                    }
-                    break;
-                case "absinthe":
-                    if (Inventory.Instance.absintheAmount > 0)
-                    {
-                        Inventory.Instance.absintheAmount--;
-                        bottlePrice = Inventory.Instance._absintheBottlePrice;
-                    }
-                    break;
-                default:
-                    Debug.LogWarning($"Unknown alcohol: {alcoholName}");
-                    break;
-            }
-
-            // Ajoute les Drakes correspondants
-            if (bottlePrice > 0)
-            {
-                GameManager.Instance.drakeManager.AddDrake(bottlePrice);
-                rewardAmount = bottlePrice;
-                // Appeler le FeedbackManager pour déclencher un feedback, en passant le GameObject actuel
-                GameManager.Instance.feedbackManager.TriggerFeedback(startPosition, moveDirection, rewardAmount, gameObject);
-            }
+        // Ajoute les Drakes correspondants
+        if (bottlePrice > 0)
+        {
+            GameManager.Instance.drakeManager.AddDrake(bottlePrice);
+            rewardAmount = bottlePrice;
+            // Appeler le FeedbackManager pour déclencher un feedback, en passant le GameObject actuel
+            GameManager.Instance.feedbackManager.TriggerFeedback(startPosition, moveDirection, rewardAmount, gameObject);
         }
     }
+}
+
 
     private int GetBottleCount()
     {
@@ -149,7 +147,7 @@ public class AutoSell : MonoBehaviour
             "brandy" => Inventory.Instance.brandyAmount,
             "wiskey" => Inventory.Instance.wiskeyAmount,
             "cognac" => Inventory.Instance.cognacAmount,
-            "grandMarnier" => Inventory.Instance.grandMarnierAmount,
+            "grandmarnier" => Inventory.Instance.grandMarnierAmount,
             "absinthe" => Inventory.Instance.absintheAmount,
             _ => 0 // Aucun alcool correspondant trouvé
         };
