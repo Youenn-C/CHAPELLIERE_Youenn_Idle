@@ -18,9 +18,17 @@ public class Tavernier : MonoBehaviour
     [SerializeField] private TMP_Text _levelText;
     [SerializeField] private TMP_Text _tavernierUpgradePriceText;
     
+    [Header("FeedBack Data"), Space(5)]
+    [SerializeField] private Button _feedBackButton;
+    [SerializeField] private int rewardAmount;
+    private Vector2 startPosition;
+    [SerializeField] private Vector2 moveDirection;
+    
     // Start is called before the first frame update
     void Start()
     {
+        startPosition = _feedBackButton.transform.position;
+        
         _empoyTextButton.SetActive(true);
         _levelUpButton.SetActive(false);
         tavernierLevel = 0;
@@ -86,6 +94,8 @@ public class Tavernier : MonoBehaviour
         
         GameManager.Instance.drakeManager.AddDrake(drakesAmount);
         GameManager.Instance.scoreManager.AddScore(1);
+        // Appeler le FeedbackManager pour déclencher un feedback, en passant le GameObject actuel
+        GameManager.Instance.feedbackManager.TriggerFeedback(startPosition, moveDirection, drakesAmount, gameObject);
     }
     
     public IEnumerator WorkTavernier()

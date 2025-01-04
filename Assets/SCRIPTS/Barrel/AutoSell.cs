@@ -132,9 +132,8 @@ public class AutoSell : MonoBehaviour
         if (bottlePrice > 0)
         {
             GameManager.Instance.drakeManager.AddDrake(bottlePrice);
-            rewardAmount = bottlePrice;
             // Appeler le FeedbackManager pour déclencher un feedback, en passant le GameObject actuel
-            GameManager.Instance.feedbackManager.TriggerFeedback(startPosition, moveDirection, rewardAmount, gameObject);
+            GameManager.Instance.feedbackManager.TriggerFeedback(startPosition, moveDirection, bottlePrice, gameObject);
         }
     }
 }

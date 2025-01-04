@@ -2009,7 +2009,6 @@ MonoBehaviour:
   alcoholName: grandmarnier
   maxTime: 5
   filledImage: {fileID: 167173778}
-  bottleCountText: {fileID: 0}
   rewardAmount: 0
   moveDirection: {x: 0, y: 50}
 --- !u!1 &178702386
@@ -5838,11 +5837,11 @@ Transform:
   m_GameObject: {fileID: 454118675}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 729.86475, y: 311.15613, z: 11.562552}
+  m_LocalPosition: {x: 449.86475, y: -144.81917, z: 1.5625525}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1217386306}
+  m_Father: {fileID: 1340655212}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &454118678
 MonoBehaviour:
@@ -6276,7 +6275,7 @@ GameObject:
   - component: {fileID: 473895484}
   - component: {fileID: 473895483}
   m_Layer: 5
-  m_Name: Tavernier (Text)
+  m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6290,15 +6289,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 473895481}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -1.5625525}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1318482682}
+  m_Father: {fileID: 1788133353}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -114.66608, y: 41.794983}
+  m_AnchoredPosition: {x: -559.1189, y: 108.777435}
   m_SizeDelta: {x: 154.6678, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &473895483
@@ -8749,6 +8748,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1773711195}
   - {fileID: 2061490712}
   - {fileID: 1837405622}
   - {fileID: 939205147}
@@ -10437,8 +10437,8 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 767274210}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -1.5625525}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10446,11 +10446,11 @@ RectTransform:
   - {fileID: 224823873}
   - {fileID: 1876461875}
   - {fileID: 401396026}
-  m_Father: {fileID: 1318482682}
+  m_Father: {fileID: 1788133353}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 126.871, y: -29.584}
+  m_AnchoredPosition: {x: -317.58188, y: 37.398483}
   m_SizeDelta: {x: 141.028, y: 84.759}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &767274212
@@ -12423,15 +12423,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 889050202}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -1.5625525}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1318482682}
+  m_Father: {fileID: 1788133353}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -70.72449, y: -29}
+  m_AnchoredPosition: {x: -515.17737, y: 37.982452}
   m_SizeDelta: {x: 242.5509, y: 83.591}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &889050204
@@ -14079,11 +14079,11 @@ Transform:
   m_GameObject: {fileID: 1067403466}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 10}
+  m_LocalPosition: {x: -960, y: -540, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1217386306}
+  m_Father: {fileID: 1833301446}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1067553500
 GameObject:
@@ -15156,7 +15156,6 @@ MonoBehaviour:
   alcoholName: wiskey
   maxTime: 5
   filledImage: {fileID: 1169725463}
-  bottleCountText: {fileID: 0}
   rewardAmount: 0
   moveDirection: {x: 0, y: 50}
 --- !u!114 &1169725463
@@ -15686,10 +15685,6 @@ Transform:
   - {fileID: 1037355608}
   - {fileID: 1384314321}
   - {fileID: 1621617854}
-  - {fileID: 1067403467}
-  - {fileID: 454118677}
-  - {fileID: 1788133353}
-  - {fileID: 1773711195}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1217732922
@@ -17410,7 +17405,7 @@ GameObject:
   - component: {fileID: 1318482684}
   - component: {fileID: 1318482683}
   m_Layer: 5
-  m_Name: Tavernier
+  m_Name: Tavernier - Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17428,10 +17423,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 473895482}
-  - {fileID: 1879077214}
-  - {fileID: 889050203}
-  - {fileID: 767274211}
+  - {fileID: 1788133353}
   m_Father: {fileID: 382259257}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -18121,6 +18113,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 454118677}
   - {fileID: 817853966}
   - {fileID: 534601613}
   - {fileID: 1735803922}
@@ -18265,7 +18258,6 @@ MonoBehaviour:
   alcoholName: brandy
   maxTime: 5
   filledImage: {fileID: 1341301672}
-  bottleCountText: {fileID: 0}
   rewardAmount: 0
   moveDirection: {x: 0, y: 50}
 --- !u!114 &1341301672
@@ -22523,7 +22515,6 @@ MonoBehaviour:
   alcoholName: cognac
   maxTime: 5
   filledImage: {fileID: 1630324980}
-  bottleCountText: {fileID: 0}
   rewardAmount: 0
   moveDirection: {x: 0, y: 50}
 --- !u!114 &1630324980
@@ -24429,11 +24420,11 @@ Transform:
   m_GameObject: {fileID: 1773711194}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 729.86475, y: 311.15613, z: 11.562552}
+  m_LocalPosition: {x: 449.86475, y: -149.20897, z: 1.5625525}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1217386306}
+  m_Father: {fileID: 656830754}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1773711196
 MonoBehaviour:
@@ -24633,11 +24624,15 @@ Transform:
   m_GameObject: {fileID: 1788133352}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 729.86475, y: 303.11014, z: 11.562552}
+  m_LocalPosition: {x: 444.45285, y: -66.98247, z: 1.5625525}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1217386306}
+  m_Children:
+  - {fileID: 473895482}
+  - {fileID: 1879077214}
+  - {fileID: 889050203}
+  - {fileID: 767274211}
+  m_Father: {fileID: 1318482682}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1788133354
 MonoBehaviour:
@@ -24660,6 +24655,9 @@ MonoBehaviour:
   _tavernierUpgradePrice: 500
   _levelText: {fileID: 1879077215}
   _tavernierUpgradePriceText: {fileID: 401396027}
+  _feedBackButton: {fileID: 774414332}
+  rewardAmount: 0
+  moveDirection: {x: 0, y: 150}
 --- !u!1 &1788658419
 GameObject:
   m_ObjectHideFlags: 0
@@ -25806,6 +25804,7 @@ RectTransform:
   - {fileID: 1420457788}
   - {fileID: 824823488}
   - {fileID: 774414331}
+  - {fileID: 1067403467}
   - {fileID: 393832622}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -26439,15 +26438,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1879077213}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -1.5625525}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1318482682}
+  m_Father: {fileID: 1788133353}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 80.028, y: 41.794983}
+  m_AnchoredPosition: {x: -364.42487, y: 108.777435}
   m_SizeDelta: {x: 234.72, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1879077215
@@ -26886,7 +26885,6 @@ MonoBehaviour:
   alcoholName: absinthe
   maxTime: 5
   filledImage: {fileID: 1906273271}
-  bottleCountText: {fileID: 0}
   rewardAmount: 0
   moveDirection: {x: 0, y: 50}
 --- !u!114 &1906273271
