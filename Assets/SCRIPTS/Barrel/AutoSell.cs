@@ -131,9 +131,10 @@ public class AutoSell : MonoBehaviour
         // Ajoute les Drakes correspondants
         if (bottlePrice > 0)
         {
-            GameManager.Instance.drakeManager.AddDrake(bottlePrice);
+            int amount = bottlePrice + GameManager.Instance.scoreManager.score;
+            GameManager.Instance.drakeManager.AddDrake(amount);
             // Appeler le FeedbackManager pour déclencher un feedback, en passant le GameObject actuel
-            GameManager.Instance.feedbackManager.TriggerFeedback(startPosition, moveDirection, bottlePrice, gameObject);
+            GameManager.Instance.feedbackManager.TriggerFeedback1(startPosition, moveDirection, amount, gameObject);
         }
     }
 }

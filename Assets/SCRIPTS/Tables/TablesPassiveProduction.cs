@@ -35,7 +35,7 @@ public class TablesPassiveProduction : MonoBehaviour
             GameManager.Instance.drakeManager.UpdateDrakeUI();
 
             // Appeler le FeedbackManager pour déclencher un feedback, en passant le GameObject actuel
-            GameManager.Instance.feedbackManager.TriggerFeedback(startPosition, moveDirection, rewardAmount, gameObject);
+            GameManager.Instance.feedbackManager.TriggerFeedback1(startPosition, moveDirection, rewardAmount, gameObject);
         }
     }
 

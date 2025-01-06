@@ -40,7 +40,7 @@ public class Tavernier : MonoBehaviour
     
     void Update()
     {
-        if (Inventory.Instance.richness >= _tavernierUpgradePrice) _tavernierButton.interactable = true;
+        if (Inventory.Instance.richness >= _tavernierUpgradePrice && tavernierLevel < tavernierMaxLevel) _tavernierButton.interactable = true;
         else
         {
             _tavernierButton.interactable = false;
@@ -76,26 +76,24 @@ public class Tavernier : MonoBehaviour
                 _levelUpButton.SetActive(true);
                 StartCoroutine(WorkTavernier());
             }
+        }
             
-            if (tavernierLevel == tavernierMaxLevel)
-            {
-                _levelText.text = "Level MAX";
-                _tavernierButton.interactable = false;
-            }
+        if (tavernierLevel == tavernierMaxLevel)
+        {
+            _levelText.text = "Level MAX";
+            _tavernierButton.interactable = false;
         }
     }
     
     private void ServeTheGuestByTavernier()
     {
-        int valeur = (2 + tavernierLevel) * multiplyingFactor;
+        int valeur = (GameManager.Instance.upgrade._strength + tavernierLevel) * multiplyingFactor;
         int drakesAmount = valeur;
-        
-        Debug.Log(drakesAmount);
         
         GameManager.Instance.drakeManager.AddDrake(drakesAmount);
         GameManager.Instance.scoreManager.AddScore(1);
         // Appeler le FeedbackManager pour déclencher un feedback, en passant le GameObject actuel
-        GameManager.Instance.feedbackManager.TriggerFeedback(startPosition, moveDirection, drakesAmount, gameObject);
+        GameManager.Instance.feedbackManager.TriggerFeedback2(startPosition, moveDirection, drakesAmount, gameObject);
     }
     
     public IEnumerator WorkTavernier()

@@ -29,6 +29,11 @@ public class GameManager : MonoBehaviour
 
     [Header("Variables"), Space(5)]
     public float priceMultiplier = 1;
+    
+    [Header("FeedBack Data"), Space(5)]
+    [SerializeField] private int rewardAmount;
+    private Vector2 startPosition;
+    [SerializeField] private Vector2 moveDirection;
 
     private void Awake()
     {
@@ -73,7 +78,8 @@ public class GameManager : MonoBehaviour
 
     public void ServeTheGuest()
     {
-        drakeManager.AddDrake(Mathf.Abs(upgrade._defaultClic * upgrade._strength));
+        int amount = Mathf.Abs(upgrade._defaultClic * upgrade._strength);
+        drakeManager.AddDrake(amount);
         scoreManager.AddScore(2);
 
         if (_sfxAudioSource != null && !_sfxAudioSource.mute)

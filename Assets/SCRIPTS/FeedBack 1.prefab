@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 8479824421900084592}
   - component: {fileID: 8834358734033650915}
   m_Layer: 5
-  m_Name: FeedBack
+  m_Name: FeedBack 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -34,9 +34,9 @@ public class Upgrade : MonoBehaviour
     
     void Start()
     {
-        _tablesCurrentLevelText.text = "Lvl : " + _tablesCurrentLevel.ToString();
-        _barrelCurrentLevelText.text = "Lvl : " + _barrelCurrentLevel.ToString();
-        _strenghtCurrentLevelText.text = "Lvl : " + _barrelCurrentLevel.ToString();
+        _tablesCurrentLevelText.text = "Level : " + _tablesCurrentLevel.ToString();
+        _barrelCurrentLevelText.text = "Level : " + _barrelCurrentLevel.ToString();
+        _strenghtCurrentLevelText.text = "Level : " + _barrelCurrentLevel.ToString();
         
         _tablesUpgradePriceText.text = _tablesUpgradePrice.ToString();
         _barrelsUpgradePriceText.text = _barrelUpgradePrice.ToString();
@@ -49,17 +49,17 @@ public class Upgrade : MonoBehaviour
 
     void Update()
     {
-        if (Inventory.Instance.richness >= _tablesUpgradePrice) _tablesUpgradeButton.interactable = true;
+        if (Inventory.Instance.richness >= _tablesUpgradePrice && _tablesCurrentLevel < _tablesMaxLevel) _tablesUpgradeButton.interactable = true;
         else
         {
             _tablesUpgradeButton.interactable = false;
         }
-        if (Inventory.Instance.richness >= _barrelUpgradePrice) _barrelsUpgradeButton.interactable = true;
+        if (Inventory.Instance.richness >= _barrelUpgradePrice && _barrelCurrentLevel < _barrelsMaxLevel) _barrelsUpgradeButton.interactable = true;
         else
         {
             _barrelsUpgradeButton.interactable = false;
         }
-        if (Inventory.Instance.richness >= _strenghtUpgradePrice) _strenghtUpgradeButton.interactable = true;
+        if (Inventory.Instance.richness >= _strenghtUpgradePrice && _strenghtCurrentLevel < _strenghtMaxLevel) _strenghtUpgradeButton.interactable = true;
         else
         {
             _strenghtUpgradeButton.interactable = false;
@@ -85,12 +85,12 @@ public class Upgrade : MonoBehaviour
             {
                 _tablesUpgradeButton.interactable = false;
             }
+        }
             
-            if (_tablesCurrentLevel >= _tablesMaxLevel)
-            {
-                _tablesCurrentLevelText.text = "Level MAX";
-                _tablesUpgradeButton.interactable = false;
-            }
+        if (_tablesCurrentLevel >= _tablesMaxLevel)
+        {
+            _tablesCurrentLevelText.text = "Level MAX";
+            _tablesUpgradeButton.interactable = false;
         }
     }
 
@@ -113,12 +113,12 @@ public class Upgrade : MonoBehaviour
             {
                 _barrelsUpgradeButton.interactable = false;
             }
+        }
 
-            if (_barrelCurrentLevel >= _barrelsMaxLevel)
-            {
-                _barrelCurrentLevelText.text = "Level MAX";
-                _barrelsUpgradeButton.interactable = false;
-            }
+        if (_barrelCurrentLevel >= _barrelsMaxLevel)
+        {
+            _barrelCurrentLevelText.text = "Level MAX";
+            _barrelsUpgradeButton.interactable = false;
         }
     }
 
@@ -142,12 +142,12 @@ public class Upgrade : MonoBehaviour
             {
                 _strenghtUpgradeButton.interactable = false;
             }
-
-            if (_strenghtCurrentLevel >= _strenghtMaxLevel)
-            {
-                _strenghtCurrentLevelText.text = "Level MAX";
-                _strenghtUpgradeButton.interactable = false;
-            }
+        }
+        
+        if (_strenghtCurrentLevel >= _strenghtMaxLevel)
+        {
+            _strenghtCurrentLevelText.text = "Level MAX";
+            _strenghtUpgradeButton.interactable = false;
         }
     }
 }
