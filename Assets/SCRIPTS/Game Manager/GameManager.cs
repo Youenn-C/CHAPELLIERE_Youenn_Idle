@@ -54,7 +54,7 @@ public class GameManager : MonoBehaviour
         if (_musicSlider != null)
         {
             _musicSlider.onValueChanged.AddListener(SetMusicVolume);
-            _musicSlider.value = _musicAudioSources.Length > 0 ? _musicAudioSources[0].volume : 1f;
+            _musicSlider.value = 0.5f;
         }
 
         if (_musicToggle != null)
@@ -66,7 +66,7 @@ public class GameManager : MonoBehaviour
         if (_sfxSlider != null)
         {
             _sfxSlider.onValueChanged.AddListener(SetSFXVolume);
-            _sfxSlider.value = _sfxAudioSource != null ? _sfxAudioSource.volume : 1f;
+            _sfxSlider.value = 0.5f;
         }
 
         if (_sfxToggle != null)
