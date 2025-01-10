@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15f19071-a9e0-4109-87ac-8f9314201cc8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CHAPELLIERE_Youenn_Idle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CHAPELLIERE_Youenn_Idle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Barrel/AutoSell.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Barrel/AutoSell.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/BookMark/Upgrade/Tavernier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/BookMark/Upgrade/Tavernier.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/BookMark/Upgrade/Upgrade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/BookMark/Upgrade/Upgrade.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/FeedBack.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/FeedBack.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Game Manager/FeedBackManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Game Manager/FeedBackManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Game Manager/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Game Manager/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCRIPTS/Tables/TablesPassiveProduction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCRIPTS/Tables/TablesPassiveProduction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-    </list>
+    <list default="true" id="15f19071-a9e0-4109-87ac-8f9314201cc8" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,19 +34,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$PROJECT_DIR$/../Build/Windows version\Clicker_CHAPELLIERE_Youenn.exe" />
@@ -147,6 +137,7 @@
       <workItem from="1736005485029" duration="978000" />
       <workItem from="1736006744092" duration="998000" />
       <workItem from="1736068737027" duration="3438000" />
+      <workItem from="1736495563188" duration="750000" />
     </task>
     <servers />
   </component>
