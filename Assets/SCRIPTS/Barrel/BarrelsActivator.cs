@@ -28,27 +28,37 @@ public class BarrelsActivator : MonoBehaviour
         
         if (_barrelLevel == 1)
         {
-            _barrels[_barrelLevel -1 ].SetActive(true);
+            _barrels[0].SetActive(true);
         }
         
         else if (_barrelLevel == 2)
         {
-            _barrels[_barrelLevel -1 ].SetActive(true);
+            _barrels[0].SetActive(true);
+            _barrels[1].SetActive(true);
         }
         
         else if (_barrelLevel == 3)
         {
-            _barrels[_barrelLevel -1 ].SetActive(true);
+            _barrels[0].SetActive(true);
+            _barrels[1].SetActive(true);
+            _barrels[2].SetActive(true);
         }
         
         else if (_barrelLevel == 4)
         {
-            _barrels[_barrelLevel -1 ].SetActive(true);
+            _barrels[0].SetActive(true);
+            _barrels[1].SetActive(true);
+            _barrels[2].SetActive(true);
+            _barrels[3].SetActive(true);
         }
         
         else if (_barrelLevel == 5)
         {
-            _barrels[_barrelLevel -1 ].SetActive(true);
+            _barrels[0].SetActive(true);
+            _barrels[1].SetActive(true);
+            _barrels[2].SetActive(true);
+            _barrels[4].SetActive(true);
+            _barrels[4].SetActive(true);
         }
     }
 }

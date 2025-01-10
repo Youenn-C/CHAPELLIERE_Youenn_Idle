@@ -68,7 +68,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:\Unity_Editor_Versions\2022.3.48f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.48f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath &quot;E:\2 - Cours\2 - année_n°2\4 - Programmation\3 - Clicker\CHAPELLIERE_Youenn_Idle&quot; -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="E:\2 - Cours\2 - année_n°2\4 - Programmation\3 - Clicker\CHAPELLIERE_Youenn_Idle" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -76,7 +76,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:\Unity_Editor_Versions\2022.3.48f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.48f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;E:\2 - Cours\2 - année_n°2\4 - Programmation\3 - Clicker\CHAPELLIERE_Youenn_Idle&quot; -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="E:\2 - Cours\2 - année_n°2\4 - Programmation\3 - Clicker\CHAPELLIERE_Youenn_Idle" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -88,6 +88,9 @@
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
       <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
       <option name="selectedOptions">
         <list />
       </option>
@@ -98,6 +101,9 @@
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
       <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
       <option name="selectedOptions">
         <list />
       </option>
